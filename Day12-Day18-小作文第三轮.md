@@ -1,6 +1,6 @@
 # 考研英语范文 - Day12 今日任务
 
-> **今天1小时：倡议信 + 2021年英语二 Text 3。Day10备忘录记得睡前30秒回顾。**
+> **今天1小时：倡议信 + 2021年英语二 Text 3。**
 
 ## Day12 倡议信（120词）- 必背原文
 
@@ -97,7 +97,7 @@ However, critics say the big companies use such deals to buy their most threaten
 
 # 考研英语范文 - Day13 今日任务
 
-> **今天1小时：致编辑信 + 2021年英语二 Text 4。Day12倡议信记得睡前30秒回顾。**
+> **今天1小时：致编辑信 + 2021年英语二 Text 4。**
 
 ## Day13 致编辑信（120词）- 必背原文
 
@@ -190,7 +190,7 @@ Intuition's special powers are unleashed only in certain circumstances. In one s
 
 # 考研英语范文 - Day14 今日任务
 
-> **今天1小时20分：辞职信 + 2022年英语二 Text 1 + 2022年大作文（第一次图表作文）。Day13致编辑信记得睡前30秒回顾。**
+> **今天1小时20分：辞职信 + 2022年英语二 Text 1 + 2022年大作文（第一次图表作文）。**
 
 ## Day14 辞职信（120词）- 必背原文
 
@@ -305,7 +305,7 @@ Considering all these contributors, we should bear in mind that great importance
 
 # 考研英语范文 - Day15 今日任务
 
-> **今天1小时：寻找失物信 + 2022年英语二 Text 2。Day14辞职信记得睡前30秒回顾。**
+> **今天1小时：寻找失物信 + 2022年英语二 Text 2。**
 
 ## Day15 寻找失物信（120词）- 必背原文
 
@@ -404,7 +404,7 @@ Unfortunately, many people who are opting to work in retirement are preparing to
 
 # 考研英语范文 - Day16 今日任务
 
-> **今天1小时20分：2022年小作文真题（美食节邀请邮件）+ 2021年大作文（锻炼方式）。Day15寻找失物信记得睡前30秒回顾。**
+> **今天1小时20分：2022年小作文真题（美食节邀请邮件）+ 2021年大作文（锻炼方式）。**
 
 ## Day16 小作文（20分钟）- 2022年真题：校园美食节邮件
 
@@ -452,7 +452,7 @@ Considering all these contributors, we should bear in mind that great importance
 
 # 考研英语范文 - Day17 今日任务
 
-> **今天1小时：2021年翻译真题 + 本周错词复盘。Day16两篇作文记得睡前30秒回顾（美食节邮件+锻炼图表）。**
+> **今天1小时：2021年翻译真题 + 本周错词复盘。**
 
 ## Day17 翻译（40分钟）- 2021年真题：与陌生人交谈
 
