@@ -222,16 +222,12 @@ def convert(md_text, page):
         if not ln.strip():
             i += 1
             continue
-        # 普通段落（纯英文长段包进折叠en卡片，默认收起）
+        # 普通段落（纯英文长段用en卡片样式直接显示，不折叠）
         text = ln.strip()
         if len(text) > 120 and re.search(r"[A-Za-z]{3,}", text) and not re.search(
             r"[一-鿿]", text
         ):
-            out.append(
-                '<details class="enwrap"><summary>展开英文原文</summary><p class="en">'
-                + inline(text)
-                + "</p></details>"
-            )
+            out.append('<p class="en">' + inline(text) + "</p>")
         else:
             out.append("<p>" + inline(text) + "</p>")
         i += 1
