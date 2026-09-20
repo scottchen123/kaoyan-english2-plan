@@ -1,26 +1,43 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Day05–Day11</title><style>
-body{max-width:800px;margin:0 auto;padding:16px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8;color:#222}
-a{color:#0b62d6}h1{font-size:1.4em;border-bottom:2px solid #0b62d6;padding-bottom:6px}
-h2{font-size:1.2em;margin-top:1.6em;background:#f0f5ff;padding:6px 10px;border-left:4px solid #0b62d6}
-h3{font-size:1.05em}blockquote{border-left:3px solid #ccc;margin:8px 0;padding:4px 12px;color:#444;background:#fafafa}
-details{border:1px solid #ddd;border-radius:6px;margin:10px 0;padding:6px 10px;background:#fffbe8}
-summary{cursor:pointer;font-weight:bold}code{background:#f2f2f2;padding:1px 5px;border-radius:3px}
-pre{background:#272822;color:#f8f8f2;padding:10px;border-radius:6px;overflow-x:auto}
-pre code{background:none;color:inherit}.right{text-align:right}
-.task{display:flex;gap:8px;align-items:flex-start;margin:4px 0}
-.nav{background:#f0f5ff;padding:10px;border-radius:6px;margin-bottom:16px}
-table{border-collapse:collapse;width:100%;margin:10px 0}
-td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#f4f6fa;color:#1f2937;line-height:1.8}
+.hero{background:linear-gradient(135deg,#1e40af,#3b82f6);color:#fff;padding:24px 20px 20px}
+.hero h1{font-size:1.25em;margin-bottom:4px}
+.hero .sub{opacity:.85;font-size:.85em}
+.wrap{max-width:760px;margin:0 auto;padding:16px 14px 40px}
+h2{font-size:1.15em;margin:22px 0 10px;padding:10px 14px;background:#fff;border-radius:10px;border-left:5px solid #3b82f6;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+h3{font-size:1em;margin:16px 0 8px;color:#1e40af}
+p{margin:8px 0}
+.en{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:12px 14px;font-family:Georgia,"Times New Roman",serif;line-height:1.9;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+blockquote{border-left:3px solid #93c5fd;margin:10px 0;padding:8px 14px;color:#374151;background:#eff6ff;border-radius:0 8px 8px 0}
+details{border:1px solid #bfdbfe;border-radius:10px;margin:12px 0;padding:8px 12px;background:#eff6ff}
+details details{background:#fff;border-color:#ddd}
+summary{cursor:pointer;font-weight:bold;color:#1e40af;padding:4px 0}
+code{background:#eef2ff;padding:1px 6px;border-radius:4px;font-size:.92em}
+pre{background:#1f2937;color:#f8f8f2;padding:12px;border-radius:10px;overflow-x:auto}
+pre code{background:none;color:inherit}.right{text-align:right;color:#6b7280}
+.task{display:flex;gap:10px;align-items:flex-start;background:#fff;border-radius:10px;padding:12px 14px;margin:8px 0;box-shadow:0 1px 3px rgba(0,0,0,.06);cursor:pointer}
+.task input{width:20px;height:20px;margin-top:4px;flex-shrink:0;accent-color:#16a34a}
+.navtop{display:block;text-align:center;background:#fff;border-radius:10px;padding:12px;margin-bottom:6px;text-decoration:none;color:#1e40af;font-weight:bold;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.pager{display:flex;gap:10px;margin-top:24px}
+.pager a{flex:1;text-align:center;background:#fff;border-radius:10px;padding:12px;text-decoration:none;color:#1e40af;font-weight:bold;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.pager a.empty{visibility:hidden}
+.donebtn{display:block;width:100%;border:none;background:linear-gradient(135deg,#16a34a,#22c55e);color:#fff;font-size:1.05em;font-weight:bold;border-radius:12px;padding:14px;margin-top:20px;cursor:pointer;box-shadow:0 2px 6px rgba(22,163,74,.35)}
+.donebtn.done{background:#9ca3af;box-shadow:none}
+table{border-collapse:collapse;width:100%;margin:10px 0;background:#fff;border-radius:8px;overflow:hidden}
+td,th{border:1px solid #e5e7eb;padding:8px 10px;text-align:left}
 </style></head><body>
-<div class="nav"><a href="index.html">← 计划导航</a></div><h1>Day05–Day11</h1>
+<div class="hero"><h1>Day05–Day11</h1><div class="sub">考研英语二背诵计划 · 进度自动保存在本机</div></div>
+<div class="wrap">
+<a class="navtop" href="index.html">← 返回计划</a>
 <h2>考研英语范文 - Day5 今日任务</h2>
 <blockquote><p><strong>今天1小时：祝贺信 + 2019年英语二 Text 3。Day4投诉信记得睡前30秒回顾。</strong></p></blockquote>
 <h3>Day5 祝贺信（120词）- 必背原文</h3>
 <p>Dear David,</p>
-<p>It is a great pleasure to congratulate you on your recent promotion to Deputy Managing Director of ABC Trading Company. You cannot imagine how excited and happy I felt when I heard this news. I know this achievement comes from years of regular study and hard work on your part, and it is something you can be truly proud of.</p>
-<p>I have followed your progress with pleasure for many years, and I am sure you will succeed in whatever you undertake. You earned this promotion through years of hard work, and I am delighted to see your true ability finally recognized.</p>
+<p class="en">It is a great pleasure to congratulate you on your recent promotion to Deputy Managing Director of ABC Trading Company. You cannot imagine how excited and happy I felt when I heard this news. I know this achievement comes from years of regular study and hard work on your part, and it is something you can be truly proud of.</p>
+<p class="en">I have followed your progress with pleasure for many years, and I am sure you will succeed in whatever you undertake. You earned this promotion through years of hard work, and I am delighted to see your true ability finally recognized.</p>
 <p>Once again, congratulations and best wishes for your continued success. Please also bring my best wishes to your family.</p>
 <p class="right">Yours sincerely,<br>Li Ming</p>
 <blockquote><p><strong>素材修正记忆点</strong>：<code>congratulate sb. on</code> / <code>You cannot imagine how...</code> / <code>be proud of</code> / <code>succeed in</code> / <code>bring my best wishes to</code>。</p>
@@ -36,13 +53,13 @@ td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
 <blockquote><p><strong>真题信息</strong>：2019年全国硕士研究生招生考试英语（二），阅读理解 Text 3，主题为“美国农业劳动力短缺与移民签证”。</p>
 <p><strong>做法</strong>：先盖住答案，18分钟读完做5题，再对答案。</p></blockquote>
 <p><strong>原文：</strong></p>
-<p>American farmers have been complaining of labor shortages for several years. The complaints are unlikely to stop without an overhaul of immigration rules for farm workers.</p>
-<p>Congress has obstructed efforts to create a more straightforward visa for agricultural workers that would let foreign workers stay longer in the U.S. and change jobs within the industry. If this doesn&#x27;t change, American businesses, communities, and consumers will be the losers.</p>
-<p>Perhaps half of U.S. farm laborers are undocumented immigrants. As fewer such workers enter the country, the characteristics of the agricultural workforce are changing. Today&#x27;s farm laborers, while still predominantly born in Mexico, are more likely to be settled rather than migrating and more likely to be married than single. They&#x27;re also aging. At the start of this century, about one-third of crop workers were over the age of 35. Now more than half are. And picking crops is hard on older bodies. One oft-debated cure for this labor shortage remains as implausible as it&#x27;s been all along: Native U.S. workers won&#x27;t be returning to the farm.</p>
-<p>Mechanization isn&#x27;t the answer, either – not yet, at least. Production of corn, cotton, rice, soybeans, and wheat has been largely mechanized, but many high-value, labor-intensive crops, such as strawberries, need labor. Even dairy farms, where robots do a small share of milking, have a long way to go before they&#x27;re automated.</p>
-<p>As a result, farms have grown increasingly reliant on temporary guest workers using the H-2A visa to fill the gaps in the workforce. Starting around 2012, requests for the visas rose sharply; from 2011 to 2016 the number of visas issued more than doubled.</p>
-<p>The H-2A visa has no numerical cap, unlike the H-2B visa for nonagricultural work, which is limited to 66,000 a year. Even so, employers complain they aren&#x27;t given all the workers they need. The process is cumbersome, expensive, and unreliable. One survey found that bureaucratic delays led the average H-2A worker to arrive on the job 22 days late. The shortage is compounded by federal immigration raids, which remove some workers and drive others underground.</p>
-<p>In a 2012 survey, 71 percent of tree-fruit growers and almost 80 percent of raisin and berry growers said they were short of labor. Some western farmers have responded by moving operations to Mexico. From 1998 to 2000, 14.5 percent of the fruit Americans consumed was imported. Little more than a decade later, the share of imports was 25.8 percent.</p>
+<p class="en">American farmers have been complaining of labor shortages for several years. The complaints are unlikely to stop without an overhaul of immigration rules for farm workers.</p>
+<p class="en">Congress has obstructed efforts to create a more straightforward visa for agricultural workers that would let foreign workers stay longer in the U.S. and change jobs within the industry. If this doesn&#x27;t change, American businesses, communities, and consumers will be the losers.</p>
+<p class="en">Perhaps half of U.S. farm laborers are undocumented immigrants. As fewer such workers enter the country, the characteristics of the agricultural workforce are changing. Today&#x27;s farm laborers, while still predominantly born in Mexico, are more likely to be settled rather than migrating and more likely to be married than single. They&#x27;re also aging. At the start of this century, about one-third of crop workers were over the age of 35. Now more than half are. And picking crops is hard on older bodies. One oft-debated cure for this labor shortage remains as implausible as it&#x27;s been all along: Native U.S. workers won&#x27;t be returning to the farm.</p>
+<p class="en">Mechanization isn&#x27;t the answer, either – not yet, at least. Production of corn, cotton, rice, soybeans, and wheat has been largely mechanized, but many high-value, labor-intensive crops, such as strawberries, need labor. Even dairy farms, where robots do a small share of milking, have a long way to go before they&#x27;re automated.</p>
+<p class="en">As a result, farms have grown increasingly reliant on temporary guest workers using the H-2A visa to fill the gaps in the workforce. Starting around 2012, requests for the visas rose sharply; from 2011 to 2016 the number of visas issued more than doubled.</p>
+<p class="en">The H-2A visa has no numerical cap, unlike the H-2B visa for nonagricultural work, which is limited to 66,000 a year. Even so, employers complain they aren&#x27;t given all the workers they need. The process is cumbersome, expensive, and unreliable. One survey found that bureaucratic delays led the average H-2A worker to arrive on the job 22 days late. The shortage is compounded by federal immigration raids, which remove some workers and drive others underground.</p>
+<p class="en">In a 2012 survey, 71 percent of tree-fruit growers and almost 80 percent of raisin and berry growers said they were short of labor. Some western farmers have responded by moving operations to Mexico. From 1998 to 2000, 14.5 percent of the fruit Americans consumed was imported. Little more than a decade later, the share of imports was 25.8 percent.</p>
 <p>In effect, the U.S. can import food or it can import the workers who pick it.</p>
 <p><strong>5题：</strong></p>
 <p>31. What problem should be addressed according to the first two paragraphs?</p>
@@ -85,9 +102,9 @@ td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
 <blockquote><p><strong>今天1小时：求职信 + 2019年英语二 Text 4。Day5祝贺信记得睡前30秒回顾。</strong></p></blockquote>
 <h3>Day6 求职信（120词）- 必背原文</h3>
 <p>Dear Sir or Madam,</p>
-<p>I am a senior from the Department of English at Peking University. I am writing to recommend myself as a qualified candidate for the position of English teacher advertised on your website.</p>
-<p>I believe I am a suitable candidate for several reasons. Firstly, enclosed with this letter is my resume, which details my academic qualifications and work experience. I have done part-time teaching work in summer for three consecutive years. Secondly, I have the strengths needed for this position, such as good communication skills, a strong sense of responsibility and proper social manners.</p>
-<p>I would greatly appreciate it if you could grant me an interview so that I may explain in person the relevance of my background. Thank you for your time and consideration. I am looking forward to your reply.</p>
+<p class="en">I am a senior from the Department of English at Peking University. I am writing to recommend myself as a qualified candidate for the position of English teacher advertised on your website.</p>
+<p class="en">I believe I am a suitable candidate for several reasons. Firstly, enclosed with this letter is my resume, which details my academic qualifications and work experience. I have done part-time teaching work in summer for three consecutive years. Secondly, I have the strengths needed for this position, such as good communication skills, a strong sense of responsibility and proper social manners.</p>
+<p class="en">I would greatly appreciate it if you could grant me an interview so that I may explain in person the relevance of my background. Thank you for your time and consideration. I am looking forward to your reply.</p>
 <p class="right">Yours sincerely,<br>Li Ming</p>
 <blockquote><p><strong>素材修正记忆点</strong>：<code>recommend myself as</code> / <code>advertised on your website</code> / <code>enclosed with this letter is</code> / <code>consecutive</code> / <code>grant me an interview</code>。</p>
 <p><strong>格式</strong>：每段前空2格，手写时 <code>Yours sincerely</code> 和 <code>Li Ming</code> 靠右。</p></blockquote>
@@ -102,14 +119,14 @@ td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
 <blockquote><p><strong>真题信息</strong>：2019年全国硕士研究生招生考试英语（二），阅读理解 Text 4，主题为“塑料危机：个人行动 vs 政府结构性变革”。</p>
 <p><strong>做法</strong>：先盖住答案，18分钟读完做5题，再对答案。</p></blockquote>
 <p><strong>原文：</strong></p>
-<p>Arnold Schwarzenegger, Dia Mirza and Adrian Grenier have a message for you: It&#x27;s easy to beat plastic. They&#x27;re part of a bunch of celebrities starring in a new video for World Environment Day – encouraging you, the consumer, to swap out your single-use plastic staples like straws and cutlery to combat the plastics crisis.</p>
-<p>The key messages that have been put together for World Environment Day do include a call for governments to enact legislation to curb single-use plastics. But the overarching message is directed at individuals.</p>
-<p>My concern with leaving it up to the individual, however, is our limited sense of what needs to be achieved. On their own, taking our own bags to the grocery store or quitting plastic straws, for example, will accomplish little and require very little of us. They could even be detrimental, satisfying a need to have &quot;done our bit&quot; without ever progressing onto bigger, bolder, more effective actions – a kind of &quot;moral licensing&quot; that allays our concerns and stops us doing more and asking more of those in charge.</p>
-<p>While the conversation around our environment and our responsibility toward it remains centered on shopping bags and straws, we&#x27;re ignoring the balance of power that implies that as &quot;consumers&quot; we must shop sustainably, rather than as &quot;citizens&quot; hold our governments and industries to account to push for real systemic change.</p>
-<p>It&#x27;s important to acknowledge that the environment isn&#x27;t everyone&#x27;s priority – or even most people&#x27;s. We shouldn&#x27;t expect it to be. In her latest book, Why Good People Do Bad Environmental Things, Wellesley College professor Elizabeth R. DeSombre argues that the best way to collectively change the behavior of large numbers of people is for the change to be structural.</p>
-<p>This might mean implementing policy such as a plastic tax that adds a cost to environmentally problematic action, or banning single-use plastics altogether. India has just announced it will &quot;eliminate all single-use plastic in the country by 2022.&quot; There are also incentive-based ways of making better environmental choices easier, such as ensuring recycling is at least as easy as trash disposal.</p>
-<p>DeSombre isn&#x27;t saying people should stop caring about the environment. It&#x27;s just that individual actions are too slow, she says, for that to be the only, or even primary, approach to changing widespread behavior.</p>
-<p>None of this is about writing off the individual. It&#x27;s just about putting things into perspective. We don&#x27;t have time to wait. We need progressive policies that shape collective action (and rein in polluting businesses), alongside engaged citizens pushing for change.</p>
+<p class="en">Arnold Schwarzenegger, Dia Mirza and Adrian Grenier have a message for you: It&#x27;s easy to beat plastic. They&#x27;re part of a bunch of celebrities starring in a new video for World Environment Day – encouraging you, the consumer, to swap out your single-use plastic staples like straws and cutlery to combat the plastics crisis.</p>
+<p class="en">The key messages that have been put together for World Environment Day do include a call for governments to enact legislation to curb single-use plastics. But the overarching message is directed at individuals.</p>
+<p class="en">My concern with leaving it up to the individual, however, is our limited sense of what needs to be achieved. On their own, taking our own bags to the grocery store or quitting plastic straws, for example, will accomplish little and require very little of us. They could even be detrimental, satisfying a need to have &quot;done our bit&quot; without ever progressing onto bigger, bolder, more effective actions – a kind of &quot;moral licensing&quot; that allays our concerns and stops us doing more and asking more of those in charge.</p>
+<p class="en">While the conversation around our environment and our responsibility toward it remains centered on shopping bags and straws, we&#x27;re ignoring the balance of power that implies that as &quot;consumers&quot; we must shop sustainably, rather than as &quot;citizens&quot; hold our governments and industries to account to push for real systemic change.</p>
+<p class="en">It&#x27;s important to acknowledge that the environment isn&#x27;t everyone&#x27;s priority – or even most people&#x27;s. We shouldn&#x27;t expect it to be. In her latest book, Why Good People Do Bad Environmental Things, Wellesley College professor Elizabeth R. DeSombre argues that the best way to collectively change the behavior of large numbers of people is for the change to be structural.</p>
+<p class="en">This might mean implementing policy such as a plastic tax that adds a cost to environmentally problematic action, or banning single-use plastics altogether. India has just announced it will &quot;eliminate all single-use plastic in the country by 2022.&quot; There are also incentive-based ways of making better environmental choices easier, such as ensuring recycling is at least as easy as trash disposal.</p>
+<p class="en">DeSombre isn&#x27;t saying people should stop caring about the environment. It&#x27;s just that individual actions are too slow, she says, for that to be the only, or even primary, approach to changing widespread behavior.</p>
+<p class="en">None of this is about writing off the individual. It&#x27;s just about putting things into perspective. We don&#x27;t have time to wait. We need progressive policies that shape collective action (and rein in polluting businesses), alongside engaged citizens pushing for change.</p>
 <p><strong>5题：</strong></p>
 <p>36. Some celebrities star in a new video to ______.</p>
 <p>A. demand new laws on the use of plastics</p>
@@ -151,9 +168,9 @@ td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
 <blockquote><p><strong>今天1小时：推荐信 + 2020年英语二 Text 2。Day6求职信记得睡前30秒回顾。</strong></p></blockquote>
 <h3>Day7 推荐信（120词）- 必背原文</h3>
 <p>Dear Jack,</p>
-<p>As one of your closest friends, I am writing to recommend one of my favorite books to you—Around the World in Eighty Days, which is indeed a great novel.</p>
-<p>There are two primary reasons for my recommendation. For one thing, it is an exciting adventure novel about an English gentleman, Mr. Phileas Fogg, who makes a bet that he can travel around the world in eighty days. For another, it gives a vivid description of the many difficulties and incidents he meets on his journey, from storms at sea to delays on land.</p>
-<p>Therefore, I recommend it to you without any reservation. If you need any more information about this novel, please feel free to contact me. I am looking forward to your reply.</p>
+<p class="en">As one of your closest friends, I am writing to recommend one of my favorite books to you—Around the World in Eighty Days, which is indeed a great novel.</p>
+<p class="en">There are two primary reasons for my recommendation. For one thing, it is an exciting adventure novel about an English gentleman, Mr. Phileas Fogg, who makes a bet that he can travel around the world in eighty days. For another, it gives a vivid description of the many difficulties and incidents he meets on his journey, from storms at sea to delays on land.</p>
+<p class="en">Therefore, I recommend it to you without any reservation. If you need any more information about this novel, please feel free to contact me. I am looking forward to your reply.</p>
 <p class="right">Yours sincerely,<br>Li Ming</p>
 <blockquote><p><strong>素材修正记忆点</strong>：<code>one of your closest friends</code> / <code>recommend...without any reservation</code> / <code>For one thing / For another</code> / <code>vivid description of</code>。</p>
 <p><strong>格式</strong>：每段前空2格，手写时 <code>Yours sincerely</code> 和 <code>Li Ming</code> 靠右。</p></blockquote>
@@ -168,11 +185,11 @@ td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
 <blockquote><p><strong>真题信息</strong>：2020年全国硕士研究生招生考试英语（二），阅读理解 Text 2，主题为“CEO 高薪的合理性”。</p>
 <p><strong>做法</strong>：先盖住答案，18分钟读完做5题，再对答案。</p></blockquote>
 <p><strong>原文：</strong></p>
-<p>It is true that CEO pay has gone up—top ones may make 300 times the pay of typical workers on average, and since the mid-1970s, CEO pay for large publicly traded American corporations has, by varying estimates, gone up by about 500%. The typical CEO of a top American corporation now makes about $18.9 million a year.</p>
-<p>The best model for understanding the growth of CEO pay is that of limited CEO talent in a world where business opportunities for the top firms are growing rapidly. The efforts of America&#x27;s highest-earning 1% have been one of the more dynamic elements of the global economy. It&#x27;s not popular to say, but one reason their pay has gone up so much is that CEOs really have upped their game relative to many other workers in the U.S. economy.</p>
-<p>Today&#x27;s CEO, at least for major American firms, must have many more skills than simply being able to &quot;run the company.&quot; CEOs must have a good sense of financial markets and maybe even how the company should trade in them. They also need better public relations skills than their predecessors, as the costs of even a minor slipup can be significant. Then there&#x27;s the fact that large American companies are much more globalized than ever before, with supply chains spread across a larger number of countries. To lead in that system requires knowledge that is fairly mind-boggling. Plus, virtually all major American companies are becoming tech companies, one way or another. Beyond this, major CEOs still have to do all the day-to-day work they have always done.</p>
-<p>The common idea that high CEO pay is mainly about ripping people off doesn&#x27;t explain history very well. By most measures, corporate governance has become a lot tighter and more rigorous since the 1970s. Yet it is principally during this period of stronger governance that CEO pay has been high and rising. That suggests it is in the broader corporate interest to recruit top candidates for increasingly tough jobs.</p>
-<p>Furthermore, the highest CEO salaries are paid to outside candidates, not to the cozy insider picks, another sign that high CEO pay is not some kind of depredation at the expense of the rest of the company. And the stock market reacts positively when companies tie CEO pay to, say, stock prices, a sign that those practices build up corporate value not just for the CEO.</p>
+<p class="en">It is true that CEO pay has gone up—top ones may make 300 times the pay of typical workers on average, and since the mid-1970s, CEO pay for large publicly traded American corporations has, by varying estimates, gone up by about 500%. The typical CEO of a top American corporation now makes about $18.9 million a year.</p>
+<p class="en">The best model for understanding the growth of CEO pay is that of limited CEO talent in a world where business opportunities for the top firms are growing rapidly. The efforts of America&#x27;s highest-earning 1% have been one of the more dynamic elements of the global economy. It&#x27;s not popular to say, but one reason their pay has gone up so much is that CEOs really have upped their game relative to many other workers in the U.S. economy.</p>
+<p class="en">Today&#x27;s CEO, at least for major American firms, must have many more skills than simply being able to &quot;run the company.&quot; CEOs must have a good sense of financial markets and maybe even how the company should trade in them. They also need better public relations skills than their predecessors, as the costs of even a minor slipup can be significant. Then there&#x27;s the fact that large American companies are much more globalized than ever before, with supply chains spread across a larger number of countries. To lead in that system requires knowledge that is fairly mind-boggling. Plus, virtually all major American companies are becoming tech companies, one way or another. Beyond this, major CEOs still have to do all the day-to-day work they have always done.</p>
+<p class="en">The common idea that high CEO pay is mainly about ripping people off doesn&#x27;t explain history very well. By most measures, corporate governance has become a lot tighter and more rigorous since the 1970s. Yet it is principally during this period of stronger governance that CEO pay has been high and rising. That suggests it is in the broader corporate interest to recruit top candidates for increasingly tough jobs.</p>
+<p class="en">Furthermore, the highest CEO salaries are paid to outside candidates, not to the cozy insider picks, another sign that high CEO pay is not some kind of depredation at the expense of the rest of the company. And the stock market reacts positively when companies tie CEO pay to, say, stock prices, a sign that those practices build up corporate value not just for the CEO.</p>
 <p><strong>5题：</strong></p>
 <p>26. Which of the following has contributed to CEO pay rise?</p>
 <p>A. The growth in the number of corporations.</p>
@@ -214,9 +231,9 @@ td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
 <blockquote><p><strong>今天1小时：告示 + 2020年英语二 Text 3。Day7推荐信记得睡前30秒回顾。</strong></p></blockquote>
 <h3>Day8 告示（120词）- 必背原文</h3>
 <h3>Notice</h3>
-<p>In order to broaden students&#x27; horizons and enrich their extracurricular activities, the Students&#x27; Union of our university is going to hold a school-wide English speaking contest next Sunday at the Students&#x27; Auditorium.</p>
-<p>You can take part in a variety of activities, including staging musical dramas, attending group discussions, watching Oscar-winning movies, and joining speeches and debates. These activities are highly beneficial in many ways. Firstly, your active participation will help strengthen your sense of responsibility and develop interpersonal relations. Secondly, they can improve your proficiency in English. A good command of English will enable you to get an edge over your peers.</p>
-<p>Those who are interested may sign up with their class monitor before Tuesday next week. The first six winners will be given awards. Everyone is welcome to attend. If you have any questions, please contact us.</p>
+<p class="en">In order to broaden students&#x27; horizons and enrich their extracurricular activities, the Students&#x27; Union of our university is going to hold a school-wide English speaking contest next Sunday at the Students&#x27; Auditorium.</p>
+<p class="en">You can take part in a variety of activities, including staging musical dramas, attending group discussions, watching Oscar-winning movies, and joining speeches and debates. These activities are highly beneficial in many ways. Firstly, your active participation will help strengthen your sense of responsibility and develop interpersonal relations. Secondly, they can improve your proficiency in English. A good command of English will enable you to get an edge over your peers.</p>
+<p class="en">Those who are interested may sign up with their class monitor before Tuesday next week. The first six winners will be given awards. Everyone is welcome to attend. If you have any questions, please contact us.</p>
 <p class="right">The Students&#x27; Union</p>
 <blockquote><p><strong>素材修正记忆点</strong>：<code>Notice</code> 居中 / <code>Those who are interested</code> / <code>sign up with</code> / <code>get an edge over</code> / 落款 <code>The Students&#x27; Union</code> 靠右（无 Yours）。</p>
 <p><strong>格式</strong>：标题居中，每段前空2格，手写时落款靠右。告示没有 <code>Yours sincerely</code>，别写错。</p></blockquote>
@@ -231,13 +248,13 @@ td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
 <blockquote><p><strong>真题信息</strong>：2020年全国硕士研究生招生考试英语（二），阅读理解 Text 3，主题为“城市治污：马德里清洁空气区与伦敦超低排放区”。</p>
 <p><strong>做法</strong>：先盖住答案，18分钟读完做5题，再对答案。</p></blockquote>
 <p><strong>原文：</strong></p>
-<p>Madrid was hailed as a public health beacon last November when it rolled out ambitious restrictions on the most polluting cars. Seven months and one election day later, a new conservative city council suspended enforcement of the clean air zone, a first step toward its possible demise.</p>
-<p>Mayor José Luis Martinez-Almeida made opposition to the zone a centrepiece of his election campaign, despite its success in improving air quality. A judge has now overruled the city&#x27;s decision to stop levying fines, ordering them reinstated. But with legal battles ahead, the zone&#x27;s future looks uncertain at best.</p>
-<p>Among other weaknesses, the measures cities must employ when left to tackle dirty air on their own are politically contentious, and therefore vulnerable. That&#x27;s because they inevitably put the costs of cleaning the air on to individual drivers—who must pay fees or buy better vehicles—rather than on to the car manufacturers whose cheating is the real cause of our toxic pollution.</p>
-<p>It&#x27;s not hard to imagine a similar reversal happening in London. The new ultra-low emission zone (Ulez) is likely to be a big issue in next year&#x27;s mayoral election. And if Sadiq Khan wins and extends it to the North and South Circular roads in 2021 as he intends, it is sure to spark intense opposition from the far larger number of motorists who will then be affected.</p>
-<p>It&#x27;s not that measures such as London&#x27;s Ulez are useless. Far from it. Local officials are using the levers that are available to them to safeguard residents&#x27; health in the face of a serious threat. The zones do deliver some improvements to air quality, and the science tells us that means real health benefits—fewer heart attacks, strokes and premature births, less cancer, dementia and asthma. Fewer untimely deaths.</p>
-<p>But mayors and councilors can only do so much about a problem that is far bigger than any one city or town. They are acting because national governments — Britain&#x27;s and others across Europe—have failed to do so.</p>
-<p>Restrictions that keep highly polluting cars out of certain areas — city centres, &quot;school streets&quot;, even individual roads — are a response to the absence of a larger effort to properly enforce existing regulations and require auto companies to bring their vehicles into compliance. Wales has introduced special low speed limits to minimise pollution. We&#x27;re doing everything but insist that manufacturers clean up their cars.</p>
+<p class="en">Madrid was hailed as a public health beacon last November when it rolled out ambitious restrictions on the most polluting cars. Seven months and one election day later, a new conservative city council suspended enforcement of the clean air zone, a first step toward its possible demise.</p>
+<p class="en">Mayor José Luis Martinez-Almeida made opposition to the zone a centrepiece of his election campaign, despite its success in improving air quality. A judge has now overruled the city&#x27;s decision to stop levying fines, ordering them reinstated. But with legal battles ahead, the zone&#x27;s future looks uncertain at best.</p>
+<p class="en">Among other weaknesses, the measures cities must employ when left to tackle dirty air on their own are politically contentious, and therefore vulnerable. That&#x27;s because they inevitably put the costs of cleaning the air on to individual drivers—who must pay fees or buy better vehicles—rather than on to the car manufacturers whose cheating is the real cause of our toxic pollution.</p>
+<p class="en">It&#x27;s not hard to imagine a similar reversal happening in London. The new ultra-low emission zone (Ulez) is likely to be a big issue in next year&#x27;s mayoral election. And if Sadiq Khan wins and extends it to the North and South Circular roads in 2021 as he intends, it is sure to spark intense opposition from the far larger number of motorists who will then be affected.</p>
+<p class="en">It&#x27;s not that measures such as London&#x27;s Ulez are useless. Far from it. Local officials are using the levers that are available to them to safeguard residents&#x27; health in the face of a serious threat. The zones do deliver some improvements to air quality, and the science tells us that means real health benefits—fewer heart attacks, strokes and premature births, less cancer, dementia and asthma. Fewer untimely deaths.</p>
+<p class="en">But mayors and councilors can only do so much about a problem that is far bigger than any one city or town. They are acting because national governments — Britain&#x27;s and others across Europe—have failed to do so.</p>
+<p class="en">Restrictions that keep highly polluting cars out of certain areas — city centres, &quot;school streets&quot;, even individual roads — are a response to the absence of a larger effort to properly enforce existing regulations and require auto companies to bring their vehicles into compliance. Wales has introduced special low speed limits to minimise pollution. We&#x27;re doing everything but insist that manufacturers clean up their cars.</p>
 <p><strong>5题：</strong></p>
 <p>31. Which of the following is true about Madrid&#x27;s clean air zone?</p>
 <p>A. Its effects are questionable.</p>
@@ -279,9 +296,9 @@ td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
 <blockquote><p><strong>今天1小时：咨询信 + 2020年英语二 Text 4。Day8告示记得睡前30秒回顾。</strong></p></blockquote>
 <h3>Day9 咨询信（120词）- 必背原文</h3>
 <p>Dear Sir or Madam,</p>
-<p>I am Li Ming, a senior at Peking University. I am writing to ask whether you could provide me with some information about the upcoming Christmas gifts.</p>
-<p>Firstly, please send me your current holiday catalog of gift ideas. We usually stock items priced at $50 and under. In addition, we would like to know your terms of payment, prices, quantity discounts and any special offers. Last but not least, we are interested in how the items will be shipped and how quickly they can be delivered.</p>
-<p>We are looking forward to your prompt attention to this letter. Thank you for your time and consideration. I am looking forward to your reply.</p>
+<p class="en">I am Li Ming, a senior at Peking University. I am writing to ask whether you could provide me with some information about the upcoming Christmas gifts.</p>
+<p class="en">Firstly, please send me your current holiday catalog of gift ideas. We usually stock items priced at $50 and under. In addition, we would like to know your terms of payment, prices, quantity discounts and any special offers. Last but not least, we are interested in how the items will be shipped and how quickly they can be delivered.</p>
+<p class="en">We are looking forward to your prompt attention to this letter. Thank you for your time and consideration. I am looking forward to your reply.</p>
 <p class="right">Yours sincerely,<br>Li Ming</p>
 <blockquote><p><strong>素材修正记忆点</strong>：<code>provide sb. with</code> / <code>priced at $50 and under</code> / <code>terms of payment</code> / <code>quantity discounts</code> / <code>prompt attention</code>。</p>
 <p><strong>格式</strong>：每段前空2格，手写时 <code>Yours sincerely</code> 和 <code>Li Ming</code> 靠右。</p></blockquote>
@@ -296,10 +313,10 @@ td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
 <blockquote><p><strong>真题信息</strong>：2020年全国硕士研究生招生考试英语（二），阅读理解 Text 4，主题为“Z世代的务实与谨慎”。</p>
 <p><strong>做法</strong>：先盖住答案，18分钟读完做5题，再对答案。</p></blockquote>
 <p><strong>原文：</strong></p>
-<p>Now that members of Generation Z are graduating college this spring—the most commonly-accepted definition says this generation was born after 1995, give or take a year—the attention has been rising steadily in recent weeks. Gen Zs are about to hit the streets looking for work in a labor market that&#x27;s tighter than it&#x27;s been in decades. And employers are planning on hiring about 17 percent more new graduates for jobs in the U.S. this year than last, according to a survey conducted by the National Association of Colleges and Employers. Everybody wants to know how the people who will soon inhabit those empty office cubicles will differ from those who came before them.</p>
-<p>If &quot;entitled&quot; is the most common adjective, fairly or not, applied to millennials (those born between 1981 and 1995), the catchwords for Generation Z are practical and cautious. According to the career counselors and experts who study them, Generation Zs are clear-eyed, economic pragmatists. Despite graduating into the best economy in the past 50 years, Gen Zs know what an economic train wreck looks like. They were impressionable kids during the crash of 2008, when many of their parents lost their jobs or their life savings or both. They aren&#x27;t interested in taking any chances. The booming economy seems to have done little to assuage this underlying generational sense of anxious urgency, especially for those who have college debt. College loan balances in the U.S. now stand at a record $1.5 trillion, according to the Federal Reserve.</p>
-<p>One survey from Accenture found that 88 percent of graduating seniors this year chose their major with a job in mind. In a 2019 survey of University of Georgia students, meanwhile, the career office found the most desirable trait in a future employer was the ability to offer secure employment (followed by professional development and training, and then inspiring purpose). Job security or stability was the second most important career goal (work-life balance was number one), followed by a sense of being dedicated to a cause or to feel good about serving the greater good.</p>
-<p>That&#x27;s a big change from the previous generation. &quot;Millennials wanted more flexibility in their lives,&quot; notes Tanya Michelsen, Associate Director of YouthSight, a UK-based brand manager that conducts regular 60-day surveys of British youth, in findings that might just as well apply to American youth. &quot;Generation Zs are looking for more certainty and stability, because of the rise of the gig economy. They have troubles seeing a financial future and they are quite risk averse.&quot;</p>
+<p class="en">Now that members of Generation Z are graduating college this spring—the most commonly-accepted definition says this generation was born after 1995, give or take a year—the attention has been rising steadily in recent weeks. Gen Zs are about to hit the streets looking for work in a labor market that&#x27;s tighter than it&#x27;s been in decades. And employers are planning on hiring about 17 percent more new graduates for jobs in the U.S. this year than last, according to a survey conducted by the National Association of Colleges and Employers. Everybody wants to know how the people who will soon inhabit those empty office cubicles will differ from those who came before them.</p>
+<p class="en">If &quot;entitled&quot; is the most common adjective, fairly or not, applied to millennials (those born between 1981 and 1995), the catchwords for Generation Z are practical and cautious. According to the career counselors and experts who study them, Generation Zs are clear-eyed, economic pragmatists. Despite graduating into the best economy in the past 50 years, Gen Zs know what an economic train wreck looks like. They were impressionable kids during the crash of 2008, when many of their parents lost their jobs or their life savings or both. They aren&#x27;t interested in taking any chances. The booming economy seems to have done little to assuage this underlying generational sense of anxious urgency, especially for those who have college debt. College loan balances in the U.S. now stand at a record $1.5 trillion, according to the Federal Reserve.</p>
+<p class="en">One survey from Accenture found that 88 percent of graduating seniors this year chose their major with a job in mind. In a 2019 survey of University of Georgia students, meanwhile, the career office found the most desirable trait in a future employer was the ability to offer secure employment (followed by professional development and training, and then inspiring purpose). Job security or stability was the second most important career goal (work-life balance was number one), followed by a sense of being dedicated to a cause or to feel good about serving the greater good.</p>
+<p class="en">That&#x27;s a big change from the previous generation. &quot;Millennials wanted more flexibility in their lives,&quot; notes Tanya Michelsen, Associate Director of YouthSight, a UK-based brand manager that conducts regular 60-day surveys of British youth, in findings that might just as well apply to American youth. &quot;Generation Zs are looking for more certainty and stability, because of the rise of the gig economy. They have troubles seeing a financial future and they are quite risk averse.&quot;</p>
 <p><strong>5题：</strong></p>
 <p>36. Generation Zs graduating college this spring ______.</p>
 <p>A. are recognized for their abilities</p>
@@ -345,9 +362,9 @@ td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
 <p>FROM: Li Ming, Students&#x27; Union</p>
 <p>DATE: December 21, 2021</p>
 <p>SUBJECT: Volunteer activities in Xihua Community</p>
-<p>We are going to launch a series of activities to promote a low-carbon lifestyle and to advocate energy efficiency, waste minimization and recycling. This green lifestyle is a recipe for a healthier environment and is highly recommendable to everyone.</p>
-<p>To attract more schoolmates to this lifestyle, we will hold lectures to introduce the concept. What&#x27;s more, we will hand out leaflets to every dormitory, recommending students switch off unused lights and other electrical equipment.</p>
-<p>All members are required to take part in the above activities. Other creative thoughts and brilliant ideas about the activity plan will be encouraged.</p>
+<p class="en">We are going to launch a series of activities to promote a low-carbon lifestyle and to advocate energy efficiency, waste minimization and recycling. This green lifestyle is a recipe for a healthier environment and is highly recommendable to everyone.</p>
+<p class="en">To attract more schoolmates to this lifestyle, we will hold lectures to introduce the concept. What&#x27;s more, we will hand out leaflets to every dormitory, recommending students switch off unused lights and other electrical equipment.</p>
+<p class="en">All members are required to take part in the above activities. Other creative thoughts and brilliant ideas about the activity plan will be encouraged.</p>
 <blockquote><p><strong>素材修正记忆点</strong>：<code>Memorandum</code> 居中 / 四要素 <code>TO / FROM / DATE / SUBJECT</code> / <code>advocate</code> / <code>hand out leaflets</code> / <code>switch off</code>。</p>
 <p><strong>格式</strong>：标题居中，四要素顶格写，正文每段前空2格。备忘录没有 <code>Yours sincerely</code>，别写错。</p></blockquote>
 <h3>Day10 四步清单（40分钟）</h3>
@@ -361,12 +378,12 @@ td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
 <blockquote><p><strong>真题信息</strong>：2021年全国硕士研究生招生考试英语（二），阅读理解 Text 2，主题为“英国粮食自给是否可行”。</p>
 <p><strong>做法</strong>：先盖住答案，18分钟读完做5题，再对答案。</p></blockquote>
 <p><strong>原文：</strong></p>
-<p>With the global population predicted to hit close to 10 billion by 2050, and forecasts that agricultural production in some regions will need to nearly double to keep pace, food security is increasingly making headlines. In the UK, it has become a big talking point recently too, for a rather particular reason: Brexit.</p>
-<p>Brexit is seen by some as an opportunity to reverse a recent trend towards the UK importing food. The country produces only about 60 per cent of the food it eats, down from almost three-quarters in the late 1980s. A move back to self-sufficiency, the argument goes, would boost the farming industry, political sovereignty and even the nation&#x27;s health. Sounds great — but how feasible is this vision?</p>
-<p>According to a report on UK food production from the University of Leeds, UK, 85 per cent of the country&#x27;s total land area is associated with meat and dairy production. That supplies 80 per cent of what is consumed, so even covering the whole country in livestock farms wouldn&#x27;t allow us to cover all our meat and dairy needs.</p>
-<p>There are many caveats to those figures, but they are still grave. To become much more self-sufficient, the UK would need to drastically reduce its consumption of animal foods, and probably also farm more intensively — meaning fewer green fields and more factory-style production.</p>
-<p>But switching to a mainly plant-based diet wouldn&#x27;t help. There is a good reason why the UK is dominated by animal husbandry: most of its terrain doesn&#x27;t have the right soil or climate to grow crops on a commercial basis. Just 25 per cent of the country&#x27;s land is suitable for crop-growing, most of which is already occupied by arable fields. Even if we converted all the suitable land to fields of fruit and veg — which would involve taking out all the nature reserves and removing thousands of people from their homes — we would achieve only a 30 per cent boost in crop production.</p>
-<p>Just 23 per cent of the fruit and vegetables consumed in the UK are currently home-grown, so even with the most extreme measures we could meet only 30 per cent of our fresh produce needs. That is before we look for the space to grow the grains, sugars, seeds and oils that provide us with the vast bulk of our current calorie intake.</p>
+<p class="en">With the global population predicted to hit close to 10 billion by 2050, and forecasts that agricultural production in some regions will need to nearly double to keep pace, food security is increasingly making headlines. In the UK, it has become a big talking point recently too, for a rather particular reason: Brexit.</p>
+<p class="en">Brexit is seen by some as an opportunity to reverse a recent trend towards the UK importing food. The country produces only about 60 per cent of the food it eats, down from almost three-quarters in the late 1980s. A move back to self-sufficiency, the argument goes, would boost the farming industry, political sovereignty and even the nation&#x27;s health. Sounds great — but how feasible is this vision?</p>
+<p class="en">According to a report on UK food production from the University of Leeds, UK, 85 per cent of the country&#x27;s total land area is associated with meat and dairy production. That supplies 80 per cent of what is consumed, so even covering the whole country in livestock farms wouldn&#x27;t allow us to cover all our meat and dairy needs.</p>
+<p class="en">There are many caveats to those figures, but they are still grave. To become much more self-sufficient, the UK would need to drastically reduce its consumption of animal foods, and probably also farm more intensively — meaning fewer green fields and more factory-style production.</p>
+<p class="en">But switching to a mainly plant-based diet wouldn&#x27;t help. There is a good reason why the UK is dominated by animal husbandry: most of its terrain doesn&#x27;t have the right soil or climate to grow crops on a commercial basis. Just 25 per cent of the country&#x27;s land is suitable for crop-growing, most of which is already occupied by arable fields. Even if we converted all the suitable land to fields of fruit and veg — which would involve taking out all the nature reserves and removing thousands of people from their homes — we would achieve only a 30 per cent boost in crop production.</p>
+<p class="en">Just 23 per cent of the fruit and vegetables consumed in the UK are currently home-grown, so even with the most extreme measures we could meet only 30 per cent of our fresh produce needs. That is before we look for the space to grow the grains, sugars, seeds and oils that provide us with the vast bulk of our current calorie intake.</p>
 <p><strong>5题：</strong></p>
 <p>26. Some people argue that food self-sufficiency in the UK would ______.</p>
 <p>A. be hindered by its population growth</p>
@@ -434,7 +451,7 @@ All members are required to take part in...</code></pre>
 <label class="task"><input type="checkbox" data-k="day05-11_58"><span>6篇小作文至少各默写1遍</span></label>
 <label class="task"><input type="checkbox" data-k="day05-11_59"><span>1篇小作文能在15分钟内写完</span></label>
 <label class="task"><input type="checkbox" data-k="day05-11_60"><span>6篇阅读全部完成并订正</span></label>
-<label class="task"><input type="checkbox" data-k="day05-11_61"><span>建立一页“作文错词 + 阅读错题类型”清单</span></label><script>
+<label class="task"><input type="checkbox" data-k="day05-11_61"><span>建立一页“作文错词 + 阅读错题类型”清单</span></label><button class="donebtn" data-complete="idx_01">本阶段完成，打卡</button><div class="pager"><a href="day04.html">← 上一个</a><a href="day12-18.html">下一个 →</a></div><script>
 document.querySelectorAll('input[type=checkbox][data-k]').forEach(function(b){
   var k='kx_'+b.getAttribute('data-k');
   if(localStorage.getItem(k)==='1'){b.checked=true;}
@@ -442,4 +459,10 @@ document.querySelectorAll('input[type=checkbox][data-k]').forEach(function(b){
     localStorage.setItem(k,b.checked?'1':'0');
   });
 });
-</script></body></html>
+document.querySelectorAll('[data-complete]').forEach(function(b){
+  var k='kx_'+b.getAttribute('data-complete');
+  function sync(){if(localStorage.getItem(k)==='1'){b.classList.add('done');b.textContent='已完成 ✓ 打卡成功';}}
+  sync();
+  b.addEventListener('click',function(){localStorage.setItem(k,'1');sync();});
+});
+</script></div></body></html>

@@ -10,18 +10,33 @@ DST = SRC / "docs"
 DST.mkdir(exist_ok=True)
 
 CSS = """
-body{max-width:800px;margin:0 auto;padding:16px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8;color:#222}
-a{color:#0b62d6}h1{font-size:1.4em;border-bottom:2px solid #0b62d6;padding-bottom:6px}
-h2{font-size:1.2em;margin-top:1.6em;background:#f0f5ff;padding:6px 10px;border-left:4px solid #0b62d6}
-h3{font-size:1.05em}blockquote{border-left:3px solid #ccc;margin:8px 0;padding:4px 12px;color:#444;background:#fafafa}
-details{border:1px solid #ddd;border-radius:6px;margin:10px 0;padding:6px 10px;background:#fffbe8}
-summary{cursor:pointer;font-weight:bold}code{background:#f2f2f2;padding:1px 5px;border-radius:3px}
-pre{background:#272822;color:#f8f8f2;padding:10px;border-radius:6px;overflow-x:auto}
-pre code{background:none;color:inherit}.right{text-align:right}
-.task{display:flex;gap:8px;align-items:flex-start;margin:4px 0}
-.nav{background:#f0f5ff;padding:10px;border-radius:6px;margin-bottom:16px}
-table{border-collapse:collapse;width:100%;margin:10px 0}
-td,th{border:1px solid #ccc;padding:6px 10px;text-align:left}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#f4f6fa;color:#1f2937;line-height:1.8}
+.hero{background:linear-gradient(135deg,#1e40af,#3b82f6);color:#fff;padding:24px 20px 20px}
+.hero h1{font-size:1.25em;margin-bottom:4px}
+.hero .sub{opacity:.85;font-size:.85em}
+.wrap{max-width:760px;margin:0 auto;padding:16px 14px 40px}
+h2{font-size:1.15em;margin:22px 0 10px;padding:10px 14px;background:#fff;border-radius:10px;border-left:5px solid #3b82f6;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+h3{font-size:1em;margin:16px 0 8px;color:#1e40af}
+p{margin:8px 0}
+.en{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:12px 14px;font-family:Georgia,"Times New Roman",serif;line-height:1.9;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+blockquote{border-left:3px solid #93c5fd;margin:10px 0;padding:8px 14px;color:#374151;background:#eff6ff;border-radius:0 8px 8px 0}
+details{border:1px solid #bfdbfe;border-radius:10px;margin:12px 0;padding:8px 12px;background:#eff6ff}
+details details{background:#fff;border-color:#ddd}
+summary{cursor:pointer;font-weight:bold;color:#1e40af;padding:4px 0}
+code{background:#eef2ff;padding:1px 6px;border-radius:4px;font-size:.92em}
+pre{background:#1f2937;color:#f8f8f2;padding:12px;border-radius:10px;overflow-x:auto}
+pre code{background:none;color:inherit}.right{text-align:right;color:#6b7280}
+.task{display:flex;gap:10px;align-items:flex-start;background:#fff;border-radius:10px;padding:12px 14px;margin:8px 0;box-shadow:0 1px 3px rgba(0,0,0,.06);cursor:pointer}
+.task input{width:20px;height:20px;margin-top:4px;flex-shrink:0;accent-color:#16a34a}
+.navtop{display:block;text-align:center;background:#fff;border-radius:10px;padding:12px;margin-bottom:6px;text-decoration:none;color:#1e40af;font-weight:bold;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.pager{display:flex;gap:10px;margin-top:24px}
+.pager a{flex:1;text-align:center;background:#fff;border-radius:10px;padding:12px;text-decoration:none;color:#1e40af;font-weight:bold;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.pager a.empty{visibility:hidden}
+.donebtn{display:block;width:100%;border:none;background:linear-gradient(135deg,#16a34a,#22c55e);color:#fff;font-size:1.05em;font-weight:bold;border-radius:12px;padding:14px;margin-top:20px;cursor:pointer;box-shadow:0 2px 6px rgba(22,163,74,.35)}
+.donebtn.done{background:#9ca3af;box-shadow:none}
+table{border-collapse:collapse;width:100%;margin:10px 0;background:#fff;border-radius:8px;overflow:hidden}
+td,th{border:1px solid #e5e7eb;padding:8px 10px;text-align:left}
 """
 
 JS = """
@@ -31,6 +46,12 @@ document.querySelectorAll('input[type=checkbox][data-k]').forEach(function(b){
   b.addEventListener('change',function(){
     localStorage.setItem(k,b.checked?'1':'0');
   });
+});
+document.querySelectorAll('[data-complete]').forEach(function(b){
+  var k='kx_'+b.getAttribute('data-complete');
+  function sync(){if(localStorage.getItem(k)==='1'){b.classList.add('done');b.textContent='已完成 ✓ 打卡成功';}}
+  sync();
+  b.addEventListener('click',function(){localStorage.setItem(k,'1');sync();});
 });
 """
 
@@ -163,19 +184,50 @@ def convert(md_text, page):
         if not ln.strip():
             i += 1
             continue
-        # 普通段落
-        out.append("<p>" + inline(ln.strip()) + "</p>")
+        # 普通段落（纯英文长段加en卡片样式）
+        text = ln.strip()
+        if len(text) > 120 and re.search(r"[A-Za-z]{3,}", text) and not re.search(
+            r"[一-鿿]", text
+        ):
+            out.append('<p class="en">' + inline(text) + "</p>")
+        else:
+            out.append("<p>" + inline(text) + "</p>")
         i += 1
     return "\n".join(out)
 
 
-def page(title, body, back=True):
-    nav = '<div class="nav"><a href="index.html">← 计划导航</a></div>' if back else ""
+ORDER = ["day03", "day04", "day05-11", "day12-18", "day19-25", "day26-32", "day33-39", "day40", "sucai"]
+DONEKEY = {
+    "day03": "idx_01", "day04": "idx_01", "day05-11": "idx_01",
+    "day12-18": "idx_12", "day19-25": "idx_19", "day26-32": "idx_26",
+    "day33-39": "idx_33", "day40": "idx_40",
+}
+
+
+def page(title, body, back=True, name=""):
+    nav = '<a class="navtop" href="index.html">← 返回计划</a>' if back else ""
+    pager = ""
+    done = ""
+    if name in ORDER:
+        k = ORDER.index(name)
+        prev = (
+            f'<a href="{ORDER[k-1]}.html">← 上一个</a>' if k > 0 else '<a class="empty"></a>'
+        )
+        nxt = (
+            f'<a href="{ORDER[k+1]}.html">下一个 →</a>'
+            if k < len(ORDER) - 1
+            else '<a class="empty"></a>'
+        )
+        pager = f'<div class="pager">{prev}{nxt}</div>'
+        if name in DONEKEY:
+            done = f'<button class="donebtn" data-complete="{DONEKEY[name]}">本阶段完成，打卡</button>'
     return f"""<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><style>{CSS}</style></head><body>
-{nav}<h1>{esc(title)}</h1>
-{body}<script>{JS}</script></body></html>"""
+<div class="hero"><h1>{esc(title)}</h1><div class="sub">考研英语二背诵计划 · 进度自动保存在本机</div></div>
+<div class="wrap">
+{nav}
+{body}{done}{pager}<script>{JS}</script></div></body></html>"""
 
 
 PAGES = [
@@ -235,10 +287,9 @@ def main():
             continue
         md = (SRC / src).read_text(encoding="utf-8")
         body = convert(md, names[src])
-        (DST / (names[src] + ".html")).write_text(page(title, body), encoding="utf-8")
+        (DST / (names[src] + ".html")).write_text(page(title, body, name=names[src]), encoding="utf-8")
         print("wrote", names[src] + ".html", len(body), "chars")
-    (DST / "index.html").write_text(page("考研英语二背诵计划", INDEX_BODY, back=False), encoding="utf-8")
-    print("wrote index.html")
+    print("skip index.html (hand-maintained)")
 
 
 if __name__ == "__main__":

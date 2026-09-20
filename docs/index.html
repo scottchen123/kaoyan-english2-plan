@@ -43,7 +43,6 @@ function refresh(){
 cards.forEach(function(c){
   var k='kx_'+c.getAttribute('data-k');
   if(localStorage.getItem(k)==='1'){c.classList.add('done');}
-  c.addEventListener('click',function(){localStorage.setItem(k,'1');});
 });
 refresh();
 </script></body></html>
