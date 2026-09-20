@@ -24,6 +24,8 @@ pre code{background:none;color:inherit}.right{text-align:right;color:#6b7280}
 .pager{display:flex;gap:10px;margin-top:24px}
 .pager a{flex:1;text-align:center;background:#fff;border-radius:10px;padding:12px;text-decoration:none;color:#1e40af;font-weight:bold;box-shadow:0 1px 3px rgba(0,0,0,.08)}
 .pager a.empty{visibility:hidden}
+.fab{position:fixed;right:14px;width:44px;height:44px;border-radius:50%;border:none;background:#1e40af;color:#fff;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25);display:none;z-index:99}
+#fabTop{bottom:70px}#fabBot{bottom:16px}
 .donebtn{display:block;width:100%;border:none;background:linear-gradient(135deg,#16a34a,#22c55e);color:#fff;font-size:1.05em;font-weight:bold;border-radius:12px;padding:14px;margin-top:20px;cursor:pointer;box-shadow:0 2px 6px rgba(22,163,74,.35)}
 .donebtn.done{background:#9ca3af;box-shadow:none}
 table{border-collapse:collapse;width:100%;margin:10px 0;background:#fff;border-radius:8px;overflow:hidden}
@@ -448,7 +450,7 @@ As far as I am concerned, it is a positive trend ______.</code></pre>
 <label class="task"><input type="checkbox" data-k="day26-32_183"><span>大作文模板+五套数据能默</span></label>
 <label class="task"><input type="checkbox" data-k="day26-32_184"><span>3篇翻译（海里厄特/农贸市场/谈话停顿）完成并订正</span></label>
 <label class="task"><input type="checkbox" data-k="day26-32_185"><span>6篇阅读全部完成并订正</span></label>
-<label class="task"><input type="checkbox" data-k="day26-32_186"><span>更新“阅读错题类型”清单（五周对比）</span></label><button class="donebtn" data-complete="idx_26">本阶段完成，打卡</button><div class="pager"><a href="day19-25.html">← 上一个</a><a href="day33-39.html">下一个 →</a></div><script>
+<label class="task"><input type="checkbox" data-k="day26-32_186"><span>更新“阅读错题类型”清单（五周对比）</span></label><button class="donebtn" data-complete="idx_26">本阶段完成，打卡</button><div class="pager"><a href="day19-25.html">← 上一个</a><a href="day33-39.html">下一个 →</a></div><button class="fab" id="fabTop" onclick="goTop()">↑</button><button class="fab" id="fabBot" onclick="goBot()">↓</button><script>
 document.querySelectorAll('input[type=checkbox][data-k]').forEach(function(b){
   var k='kx_'+b.getAttribute('data-k');
   if(localStorage.getItem(k)==='1'){b.checked=true;}
@@ -462,4 +464,17 @@ document.querySelectorAll('[data-complete]').forEach(function(b){
   sync();
   b.addEventListener('click',function(){localStorage.setItem(k,'1');sync();});
 });
+window.addEventListener('scroll',function(){
+  var y=window.scrollY||document.documentElement.scrollTop;
+  var show=y>400;
+  var t=document.getElementById('fabTop'),b=document.getElementById('fabBot');
+  if(!t||!b)return;
+  t.style.display=show?'block':'none';
+  if(show){
+    var nearBot=(window.innerHeight+y)>=(document.body.scrollHeight-120);
+    b.style.display=nearBot?'none':'block';
+  }else{b.style.display='none';}
+});
+function goTop(){window.scrollTo({top:0,behavior:'smooth'});}
+function goBot(){window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});}
 </script></div></body></html>

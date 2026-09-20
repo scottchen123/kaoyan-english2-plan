@@ -33,6 +33,8 @@ pre code{background:none;color:inherit}.right{text-align:right;color:#6b7280}
 .pager{display:flex;gap:10px;margin-top:24px}
 .pager a{flex:1;text-align:center;background:#fff;border-radius:10px;padding:12px;text-decoration:none;color:#1e40af;font-weight:bold;box-shadow:0 1px 3px rgba(0,0,0,.08)}
 .pager a.empty{visibility:hidden}
+.fab{position:fixed;right:14px;width:44px;height:44px;border-radius:50%;border:none;background:#1e40af;color:#fff;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25);display:none;z-index:99}
+#fabTop{bottom:70px}#fabBot{bottom:16px}
 .donebtn{display:block;width:100%;border:none;background:linear-gradient(135deg,#16a34a,#22c55e);color:#fff;font-size:1.05em;font-weight:bold;border-radius:12px;padding:14px;margin-top:20px;cursor:pointer;box-shadow:0 2px 6px rgba(22,163,74,.35)}
 .donebtn.done{background:#9ca3af;box-shadow:none}
 table{border-collapse:collapse;width:100%;margin:10px 0;background:#fff;border-radius:8px;overflow:hidden}
@@ -53,6 +55,19 @@ document.querySelectorAll('[data-complete]').forEach(function(b){
   sync();
   b.addEventListener('click',function(){localStorage.setItem(k,'1');sync();});
 });
+window.addEventListener('scroll',function(){
+  var y=window.scrollY||document.documentElement.scrollTop;
+  var show=y>400;
+  var t=document.getElementById('fabTop'),b=document.getElementById('fabBot');
+  if(!t||!b)return;
+  t.style.display=show?'block':'none';
+  if(show){
+    var nearBot=(window.innerHeight+y)>=(document.body.scrollHeight-120);
+    b.style.display=nearBot?'none':'block';
+  }else{b.style.display='none';}
+});
+function goTop(){window.scrollTo({top:0,behavior:'smooth'});}
+function goBot(){window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});}
 """
 
 _counter = [0]
@@ -196,9 +211,9 @@ def convert(md_text, page):
     return "\n".join(out)
 
 
-ORDER = ["day03", "day04", "day05-11", "day12-18", "day19-25", "day26-32", "day33-39", "day40", "sucai"]
+ORDER = ["day01-11", "day12-18", "day19-25", "day26-32", "day33-39", "day40", "sucai"]
 DONEKEY = {
-    "day03": "idx_01", "day04": "idx_01", "day05-11": "idx_01",
+    "day01-11": "idx_01",
     "day12-18": "idx_12", "day19-25": "idx_19", "day26-32": "idx_26",
     "day33-39": "idx_33", "day40": "idx_40",
 }
@@ -227,13 +242,11 @@ def page(title, body, back=True, name=""):
 <div class="hero"><h1>{esc(title)}</h1><div class="sub">考研英语二背诵计划 · 进度自动保存在本机</div></div>
 <div class="wrap">
 {nav}
-{body}{done}{pager}<script>{JS}</script></div></body></html>"""
+{body}{done}{pager}<button class="fab" id="fabTop" onclick="goTop()">↑</button><button class="fab" id="fabBot" onclick="goBot()">↓</button><script>{JS}</script></div></body></html>"""
 
 
 PAGES = [
-    ("Day03-道歉信.md", "Day03 道歉信"),
-    ("Day04-投诉信.md", "Day04 投诉信"),
-    ("Day05-Day11-小作文第二轮.md", "Day05–Day11"),
+    ("Day01-Day11-小作文第一轮.md", "Day01–Day11"),
     ("Day12-Day18-小作文第三轮.md", "Day12–Day18"),
     ("Day19-Day25-阅读大作文翻译.md", "Day19–Day25"),
     ("Day26-Day32-阅读大作文翻译.md", "Day26–Day32"),
@@ -272,9 +285,7 @@ INDEX_BODY = """
 def main():
     only = sys.argv[1:] or None
     names = {
-        "Day03-道歉信.md": "day03",
-        "Day04-投诉信.md": "day04",
-        "Day05-Day11-小作文第二轮.md": "day05-11",
+        "Day01-Day11-小作文第一轮.md": "day01-11",
         "Day12-Day18-小作文第三轮.md": "day12-18",
         "Day19-Day25-阅读大作文翻译.md": "day19-25",
         "Day26-Day32-阅读大作文翻译.md": "day26-32",
