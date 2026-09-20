@@ -36,6 +36,16 @@ pre code{background:none;color:inherit}.right{text-align:right;color:#6b7280}
 .toc{background:#fff;border-radius:10px;padding:12px 14px;margin:10px 0;box-shadow:0 1px 3px rgba(0,0,0,.06)}
 .toc .t{font-weight:bold;margin-bottom:6px;color:#1e40af}
 .toc a{display:inline-block;margin:3px 6px 3px 0;padding:4px 12px;background:#eff6ff;border-radius:16px;text-decoration:none;color:#1e40af;font-size:.88em}
+.letter{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.letter .lhead{font-weight:bold}
+.opt{display:block;width:100%;text-align:left;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:10px 14px;margin:8px 0;cursor:pointer;font-size:.95em;line-height:1.7;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.opt b{color:#1e40af;margin-right:4px}
+.opt.right{border-color:#16a34a;background:#f0fdf4}
+.opt.right b{color:#16a34a}
+.opt.wrong{border-color:#dc2626;background:#fef2f2}
+.opt.wrong b{color:#dc2626}
+.grp{display:flex;justify-content:space-between;align-items:center;background:#fff;border-radius:10px;padding:10px 14px;margin:14px 0 8px;font-weight:bold;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.grp .fold{border:1px solid #bfdbfe;background:#eff6ff;color:#1e40af;border-radius:16px;padding:2px 14px;cursor:pointer;font-size:.85em}
 details.enwrap{background:#fff;border-color:#e5e7eb}
 details.enwrap summary{color:#374151;font-weight:normal}
 .fab{position:fixed;right:14px;width:44px;height:44px;border-radius:50%;border:none;background:#1e40af;color:#fff;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25);display:none;z-index:99}
@@ -73,6 +83,38 @@ window.addEventListener('scroll',function(){
 });
 function goTop(){window.scrollTo({top:0,behavior:'smooth'});}
 function goBot(){window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});}
+function toggleGrp(btn){
+  var g=btn.closest('.grp');
+  var hide=g.classList.toggle('off');
+  btn.textContent=hide?'展开':'收起';
+  var el=g.nextElementSibling;
+  while(el&&!el.classList.contains('grp')&&el.tagName!=='H2'&&el.tagName!=='HR'){
+    el.style.display=hide?'none':'';
+    el=el.nextElementSibling;
+  }
+}
+document.querySelectorAll('button.opt').forEach(function(b){
+  b.addEventListener('click',function(){
+    var q=b.getAttribute('data-q');
+    var parts=q.split('-q');
+    var qnum=parts[1];
+    var ans=b.getAttribute('data-ans')||'';
+    if(!ans){
+      var re=new RegExp('(?:^|\\s)'+qnum+'\\.\\s*([ABCD])');
+      var details=document.querySelectorAll('details');
+      for(var i=0;i<details.length;i++){
+        var t=details[i].textContent||'';
+        var mm=t.match(re);
+        if(mm){ans=mm[1];break;}
+      }
+    }
+    document.querySelectorAll('button.opt[data-q="'+q+'"]').forEach(function(o){o.classList.remove('right','wrong');});
+    if(ans&&b.getAttribute('data-o')===ans){b.classList.add('right');}
+    else if(ans){b.classList.add('wrong');}
+    else{b.classList.add('right');}
+    try{localStorage.setItem('kx_'+q+'_'+b.getAttribute('data-o'),'1');}catch(e){}
+  });
+});
 (function(){
   var boxes=document.querySelectorAll('input[type=checkbox][data-k]');
   var sub=document.getElementById('heroSub');
@@ -88,6 +130,11 @@ function goBot(){window.scrollTo({top:document.body.scrollHeight,behavior:'smoot
 
 _counter = [0]
 TOC = [[]]
+ENBUF = [[]]
+LETBUF = [[]]
+INLETTER = [False]
+QIDS = [0]
+GIDS = [0]
 
 
 def esc(t):
@@ -111,6 +158,7 @@ def convert(md_text, page):
     seen_h1 = False
     while i < n:
         ln = lines[i]
+        text = ln.strip()
         if ln.strip().startswith("```"):
             if in_code:
                 out.append("<pre><code>" + esc("\n".join(code_buf)) + "</code></pre>")
@@ -156,8 +204,8 @@ def convert(md_text, page):
             else:
                 out.append("<blockquote>" + inner + "</blockquote>")
             continue
-        # div右对齐
-        if '<div style="text-align:right">' in ln:
+        # div右对齐（信件内落款由信件分支处理，这里跳过）
+        if '<div style="text-align:right">' in ln and not INLETTER[0]:
             t = ln.replace('<div style="text-align:right">', "").replace("</div>", "").replace("<br>", "\n")
             out.append('<p class="right">' + "<br>".join(inline(x) for x in t.split("\n")) + "</p>")
             i += 1
@@ -222,15 +270,103 @@ def convert(md_text, page):
         if not ln.strip():
             i += 1
             continue
-        # 普通段落（纯英文长段用en卡片样式直接显示，不折叠）
-        text = ln.strip()
+        # 信件成篇：Dear开头收到落款div，包成letter卡
+        if re.match(r"Dear\s", text) and not INLETTER[0]:
+            INLETTER[0] = True
+            LETBUF[0] = [f'<p class="lhead">{inline(text)}</p>']
+            i += 1
+            continue
+        if INLETTER[0]:
+            if 'text-align:right' in ln:
+                t = ln.replace('<div style="text-align:right">', "").replace("</div>", "").replace("<br>", "\n")
+                LETBUF[0].append('<p class="right">' + "<br>".join(inline(x) for x in t.split("\n")) + "</p>")
+                out.append('<div class="letter">' + "".join(LETBUF[0]) + "</div>")
+                LETBUF[0] = []
+                INLETTER[0] = False
+            elif text:
+                LETBUF[0].append(f"<p>{inline(text)}</p>")
+            i += 1
+            continue
+        # 题目选项A：题干行(数字开头)+下一行四选项连写（题干尾? X自带答案则剥离）
+        mopt = re.match(r"(\d+)\.\s+(.*)", text)
+        if mopt and i + 1 < n and re.search(r"\bA\.\s", lines[i + 1]) and re.search(r"\sB\.\s", lines[i + 1]):
+            qnum = mopt.group(1)
+            stem = mopt.group(2)
+            given = ""
+            mg = re.match(r"(.*\?)\s+([ABCD])\s*$", stem)
+            if mg:
+                stem, given = mg.group(1), mg.group(2)
+            oline = lines[i + 1].strip()
+            parts = re.split(r"\s(?=[ABCD]\.\s)", oline)
+            opts = [p for p in parts if re.match(r"[ABCD]\.\s", p)]
+            out.append(f"<p><strong>{qnum}. {inline(stem)}</strong></p>")
+            for o in opts:
+                extra = f' data-ans="{given}"' if given else ""
+                out.append(
+                    f'<button class="opt" data-q="{page}-q{qnum}" data-o="{o[0]}"{extra}><b>{o[0]}.</b> {inline(o[3:].strip())}</button>'
+                )
+            i += 2
+            continue
+        # 题目选项B：一行内题干+四选项连写
+        if mopt and re.search(r"\bA\.\s", text) and re.search(r"\sB\.\s", text):
+            qnum = mopt.group(1)
+            rest = mopt.group(2)
+            parts = re.split(r"\s(?=[ABCD]\.\s)", rest)
+            stem = parts[0] if not re.match(r"[ABCD]\.\s", parts[0]) else ""
+            opts = [p for p in parts if re.match(r"[ABCD]\.\s", p)]
+            if stem:
+                out.append(f"<p><strong>{qnum}. {inline(stem)}</strong></p>")
+            else:
+                out.append(f"<p><strong>{qnum}.</strong></p>")
+            for o in opts:
+                out.append(
+                    f'<button class="opt" data-q="{page}-q{qnum}" data-o="{o[0]}"><b>{o[0]}.</b> {inline(o[3:].strip())}</button>'
+                )
+            i += 1
+            continue
+        # 题目选项C：题干行+下面四行各一个选项(4空格缩进)
+        if mopt and i + 1 < n and re.match(r"\s{2,}A\.\s", lines[i + 1]):
+            qnum = mopt.group(1)
+            stem = mopt.group(2)
+            out.append(f"<p><strong>{qnum}. {inline(stem)}</strong></p>")
+            i += 1
+            while i < n:
+                mom = re.match(r"\s{2,}([ABCD])\.\s*(.*)", lines[i])
+                if not mom:
+                    break
+                out.append(
+                    f'<button class="opt" data-q="{page}-q{qnum}" data-o="{mom.group(1)}"><b>{mom.group(1)}.</b> {inline(mom.group(2).strip())}</button>'
+                )
+                i += 1
+            continue
+        # 分组标题：**原文：**/**5题：**等独占一行，转成分组头（可收起下属内容）
+        mgrp = re.match(r"\*\*(.+：)\*\*\s*$", text)
+        if mgrp:
+            GIDS[0] += 1
+            out.append(
+                f'<div class="grp" data-grp="{page}-g{GIDS[0]}"><span>{esc(mgrp.group(1))}</span>'
+                f'<button class="fold" onclick="toggleGrp(this)">收起</button></div>'
+            )
+            i += 1
+            continue
+        # 普通段落：纯英文长段暂存，连续英文段合并成一篇en卡片
         if len(text) > 120 and re.search(r"[A-Za-z]{3,}", text) and not re.search(
             r"[一-鿿]", text
         ):
-            out.append('<p class="en">' + inline(text) + "</p>")
-        else:
-            out.append("<p>" + inline(text) + "</p>")
+            ENBUF[0].append(inline(text))
+            i += 1
+            continue
+        if ENBUF[0]:
+            out.append('<div class="en">' + "".join(f"<p>{p}</p>" for p in ENBUF[0]) + "</div>")
+            ENBUF[0] = []
+        if not text:
+            i += 1
+            continue
+        out.append("<p>" + inline(text) + "</p>")
         i += 1
+    if ENBUF[0]:
+        out.append('<div class="en">' + "".join(f"<p>{p}</p>" for p in ENBUF[0]) + "</div>")
+        ENBUF[0] = []
     return "\n".join(out)
 
 
@@ -337,6 +473,9 @@ def main():
             continue
         md = (SRC / src).read_text(encoding="utf-8")
         TOC[0] = []
+        ENBUF[0] = []
+        LETBUF[0] = []
+        INLETTER[0] = False
         body = convert(md, names[src])
         (DST / (names[src] + ".html")).write_text(page(title, body, name=names[src]), encoding="utf-8")
         print("wrote", names[src] + ".html", len(body), "chars")

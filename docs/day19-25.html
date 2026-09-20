@@ -27,6 +27,16 @@ pre code{background:none;color:inherit}.right{text-align:right;color:#6b7280}
 .toc{background:#fff;border-radius:10px;padding:12px 14px;margin:10px 0;box-shadow:0 1px 3px rgba(0,0,0,.06)}
 .toc .t{font-weight:bold;margin-bottom:6px;color:#1e40af}
 .toc a{display:inline-block;margin:3px 6px 3px 0;padding:4px 12px;background:#eff6ff;border-radius:16px;text-decoration:none;color:#1e40af;font-size:.88em}
+.letter{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.letter .lhead{font-weight:bold}
+.opt{display:block;width:100%;text-align:left;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:10px 14px;margin:8px 0;cursor:pointer;font-size:.95em;line-height:1.7;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.opt b{color:#1e40af;margin-right:4px}
+.opt.right{border-color:#16a34a;background:#f0fdf4}
+.opt.right b{color:#16a34a}
+.opt.wrong{border-color:#dc2626;background:#fef2f2}
+.opt.wrong b{color:#dc2626}
+.grp{display:flex;justify-content:space-between;align-items:center;background:#fff;border-radius:10px;padding:10px 14px;margin:14px 0 8px;font-weight:bold;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.grp .fold{border:1px solid #bfdbfe;background:#eff6ff;color:#1e40af;border-radius:16px;padding:2px 14px;cursor:pointer;font-size:.85em}
 details.enwrap{background:#fff;border-color:#e5e7eb}
 details.enwrap summary{color:#374151;font-weight:normal}
 .fab{position:fixed;right:14px;width:44px;height:44px;border-radius:50%;border:none;background:#1e40af;color:#fff;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25);display:none;z-index:99}
@@ -45,42 +55,37 @@ td,th{border:1px solid #e5e7eb;padding:8px 10px;text-align:left}
 <h3>Day19 阅读精读（20分钟）- 2022年英语二 Text 3 真题</h3>
 <blockquote><p><strong>真题信息</strong>：2022年全国硕士研究生招生考试英语（二），阅读理解 Text 3，主题为“黑暗模式（dark patterns）与数字欺骗”。</p>
 <p><strong>做法</strong>：先盖住答案，18分钟读完做5题，再对答案。</p></blockquote>
-<p><strong>原文：</strong></p>
-<p class="en">We have all encountered them, in both our personal and professional lives. Think about the times you felt tricked or frustrated by a membership or subscription that had a seamless sign-up process but was later difficult to cancel. Something that should be simple and transparent can be complicated, intentionally or unintentionally, in ways that impair consumer choice. These are examples of dark patterns.</p>
-<p class="en">First coined in 2010 by user experience expert Harry Brignull, &quot;dark patterns&quot; is a catch-all term for practices that manipulate user interfaces to influence the decision-making ability of users. Brignull identifies 12 types of common dark patterns, ranging from misdirection and hidden costs to &quot;roach motel,&quot; where a user experience seems easy and intuitive at the start, but turns difficult when the user tries to get out.</p>
-<p class="en">In a 2019 study of 53,000 product pages and 11,000 websites, researchers found that about one in 10 employs these design practices. Though widely prevalent, the concept of dark patterns is still not well understood. Business and nonprofit leaders should be aware of dark patterns and try to avoid the gray areas they engender.</p>
-<p class="en">Where is the line between ethical, persuasive design and dark patterns? Businesses should engage in conversations with IT, compliance, risk, and legal teams to review their privacy policy, and include in the discussion the customer/user experience designers and coders responsible for the company&#x27;s user interface, as well as the marketers and advertisers responsible for sign-ups, checkout baskets, pricing, and promotions. Any or all these teams can play a role in creating or avoiding &quot;digital deception.&quot;</p>
-<p class="en">Lawmakers and regulators are slowly starting to address the ambiguity around dark patterns, most recently at the state level. In March, the California Attorney General announced the approval of additional regulations under the California Consumer Privacy Act (CCPA) that &quot;ensure that consumers will not be confused or misled when seeking to exercise their data privacy rights.&quot; The regulations aim to ban dark patterns—this means prohibiting companies from using confusing language or unnecessary steps such as forcing them to click through multiple screens or listen to reasons why they shouldn&#x27;t opt out.</p>
-<p class="en">As more states consider promulgating additional regulations, there is a need for greater accountability from within the business community. Dark patterns also can be addressed on a self-regulatory basis, but only if organizations hold themselves accountable, not just to legal requirements but also to industry best practices and standards.</p>
-<p><strong>5题：</strong></p>
-<p>31. It can be learned from the first two paragraphs that dark patterns ______.</p>
-<p>A. improve user experiences</p>
-<p>B. leak user information for profit</p>
-<p>C. undermine users&#x27; decision-making</p>
-<p>D. remind users of hidden costs</p>
-<p>32. The 2019 study on dark patterns is mentioned to show ______.</p>
-<p>A. their major flaws</p>
-<p>B. their complex designs</p>
-<p>C. their severe damage</p>
-<p>D. their strong presence</p>
-<p>33. To handle digital deception, businesses should ______.</p>
-<p>A. listen to customer feedback</p>
-<p>B. talk with relevant teams</p>
-<p>C. turn to independent agencies</p>
-<p>D. rely on professional training</p>
-<p>34. The additional regulations under the CCPA are intended to ______.</p>
-<p>A. guide users through opt-out processes</p>
-<p>B. protect consumers from being tricked</p>
-<p>C. grant companies data privacy rights</p>
-<p>D. restrict access to problematic content</p>
-<p>35. According to the last paragraph, a key to coping with dark patterns is ______.</p>
-<p>A. new legal requirements</p>
-<p>B. businesses&#x27; self-discipline</p>
-<p>C. strict regulatory standards</p>
-<p>D. consumers&#x27; safety awareness</p>
+<div class="grp" data-grp="day19-25-g33"><span>原文：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
+<div class="grp" data-grp="day19-25-g34"><span>5题：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
+<p><strong>31. It can be learned from the first two paragraphs that dark patterns ______.</strong></p>
+<button class="opt" data-q="day19-25-q31" data-o="A"><b>A.</b> improve user experiences</button>
+<button class="opt" data-q="day19-25-q31" data-o="B"><b>B.</b> leak user information for profit</button>
+<button class="opt" data-q="day19-25-q31" data-o="C"><b>C.</b> undermine users&#x27; decision-making</button>
+<button class="opt" data-q="day19-25-q31" data-o="D"><b>D.</b> remind users of hidden costs</button>
+<p><strong>32. The 2019 study on dark patterns is mentioned to show ______.</strong></p>
+<button class="opt" data-q="day19-25-q32" data-o="A"><b>A.</b> their major flaws</button>
+<button class="opt" data-q="day19-25-q32" data-o="B"><b>B.</b> their complex designs</button>
+<button class="opt" data-q="day19-25-q32" data-o="C"><b>C.</b> their severe damage</button>
+<button class="opt" data-q="day19-25-q32" data-o="D"><b>D.</b> their strong presence</button>
+<p><strong>33. To handle digital deception, businesses should ______.</strong></p>
+<button class="opt" data-q="day19-25-q33" data-o="A"><b>A.</b> listen to customer feedback</button>
+<button class="opt" data-q="day19-25-q33" data-o="B"><b>B.</b> talk with relevant teams</button>
+<button class="opt" data-q="day19-25-q33" data-o="C"><b>C.</b> turn to independent agencies</button>
+<button class="opt" data-q="day19-25-q33" data-o="D"><b>D.</b> rely on professional training</button>
+<p><strong>34. The additional regulations under the CCPA are intended to ______.</strong></p>
+<button class="opt" data-q="day19-25-q34" data-o="A"><b>A.</b> guide users through opt-out processes</button>
+<button class="opt" data-q="day19-25-q34" data-o="B"><b>B.</b> protect consumers from being tricked</button>
+<button class="opt" data-q="day19-25-q34" data-o="C"><b>C.</b> grant companies data privacy rights</button>
+<button class="opt" data-q="day19-25-q34" data-o="D"><b>D.</b> restrict access to problematic content</button>
+<p><strong>35. According to the last paragraph, a key to coping with dark patterns is ______.</strong></p>
+<button class="opt" data-q="day19-25-q35" data-o="A"><b>A.</b> new legal requirements</button>
+<button class="opt" data-q="day19-25-q35" data-o="B"><b>B.</b> businesses&#x27; self-discipline</button>
+<button class="opt" data-q="day19-25-q35" data-o="C"><b>C.</b> strict regulatory standards</button>
+<button class="opt" data-q="day19-25-q35" data-o="D"><b>D.</b> consumers&#x27; safety awareness</button>
 <label class="task"><input type="checkbox" data-k="day19-25_113"><span>18分钟做完，写下答案</span></label>
 <label class="task"><input type="checkbox" data-k="day19-25_114"><span>对答案见折叠区</span></label>
-<details><summary>Day19 答案&amp;解析（做完再点开）</summary><p><strong>答案：</strong> 31. C　32. D　33. B　34. B　35. B</p>
+<details><summary>Day19 答案&amp;解析（做完再点开）</summary><div class="en"><p>We have all encountered them, in both our personal and professional lives. Think about the times you felt tricked or frustrated by a membership or subscription that had a seamless sign-up process but was later difficult to cancel. Something that should be simple and transparent can be complicated, intentionally or unintentionally, in ways that impair consumer choice. These are examples of dark patterns.</p><p>First coined in 2010 by user experience expert Harry Brignull, &quot;dark patterns&quot; is a catch-all term for practices that manipulate user interfaces to influence the decision-making ability of users. Brignull identifies 12 types of common dark patterns, ranging from misdirection and hidden costs to &quot;roach motel,&quot; where a user experience seems easy and intuitive at the start, but turns difficult when the user tries to get out.</p><p>In a 2019 study of 53,000 product pages and 11,000 websites, researchers found that about one in 10 employs these design practices. Though widely prevalent, the concept of dark patterns is still not well understood. Business and nonprofit leaders should be aware of dark patterns and try to avoid the gray areas they engender.</p><p>Where is the line between ethical, persuasive design and dark patterns? Businesses should engage in conversations with IT, compliance, risk, and legal teams to review their privacy policy, and include in the discussion the customer/user experience designers and coders responsible for the company&#x27;s user interface, as well as the marketers and advertisers responsible for sign-ups, checkout baskets, pricing, and promotions. Any or all these teams can play a role in creating or avoiding &quot;digital deception.&quot;</p><p>Lawmakers and regulators are slowly starting to address the ambiguity around dark patterns, most recently at the state level. In March, the California Attorney General announced the approval of additional regulations under the California Consumer Privacy Act (CCPA) that &quot;ensure that consumers will not be confused or misled when seeking to exercise their data privacy rights.&quot; The regulations aim to ban dark patterns—this means prohibiting companies from using confusing language or unnecessary steps such as forcing them to click through multiple screens or listen to reasons why they shouldn&#x27;t opt out.</p><p>As more states consider promulgating additional regulations, there is a need for greater accountability from within the business community. Dark patterns also can be addressed on a self-regulatory basis, but only if organizations hold themselves accountable, not just to legal requirements but also to industry best practices and standards.</p></div>
+<p><strong>答案：</strong> 31. C　32. D　33. B　34. B　35. B</p>
 <p>1. <strong>C</strong>：首段 <code>impair consumer choice</code> + 第二段 <code>influence the decision-making ability</code>，损害用户决策。</p>
 <p>2. <strong>D</strong>：5.3万页面、1.1万网站中约十分之一采用，说明黑暗模式盛行。</p>
 <p>3. <strong>B</strong>：第四段 <code>engage in conversations with IT, compliance, risk, and legal teams</code>，与相关团队沟通。</p>
@@ -92,13 +97,11 @@ td,th{border:1px solid #e5e7eb;padding:8px 10px;text-align:left}
 <h3>Day19 翻译（40分钟）- 2022年真题：绘画的意外收获</h3>
 <blockquote><p><strong>真题信息</strong>：2022年英语（二）翻译 Q46，约145词，15分。节选自 Flavours Holidays《绘画对心理健康的七大益处》。</p>
 <p><strong>做法</strong>：先自己翻一遍（25分钟），再对参考译文找差距（15分钟）。注意让步状语从句和固定搭配。</p></blockquote>
-<p><strong>英文原文：</strong></p>
-<p class="en">Although we try our best, sometimes our paintings rarely turn out as originally planned. Changes in the light, the limitations of your painting materials, and the lack of experience and technique mean that what you start out trying to achieve may not come to life the way that you expected.</p>
-<p class="en">Although this can be frustrating and disappointing, it turns out that this can actually be good for you. Unexpected results have two benefits: you pretty quickly learn to deal with disappointment, and realise that when one door closes, another opens. You also quickly learn to adapt and come up with creative solutions to the problems the painting presents, and thinking outside the box will become your second nature.</p>
-<p class="en">In fact, creative problem-solving skills are incredibly useful in daily life, with which you&#x27;re more likely to be able to find a solution when a problem arises.</p>
+<div class="grp" data-grp="day19-25-g35"><span>英文原文：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
 <label class="task"><input type="checkbox" data-k="day19-25_115"><span><strong>翻25分钟</strong>：逐句翻，<code>Although...</code> 让步别翻反；<code>come up with / think outside the box / second nature</code> 三个搭配别漏</span></label>
 <label class="task"><input type="checkbox" data-k="day19-25_116"><span><strong>对15分钟</strong>：对照折叠区参考译文，用红笔标出漏翻、错翻的关键词</span></label>
-<details><summary>Day19 参考译文（翻完再点开）</summary><p>虽然我们竭尽所能，但有时我们的画作很少符合最初的计划。光线的改变、绘画材料的限制以及经验和技巧的不足，都意味着起初想要达到的效果未必能够如你所愿地呈现出来。</p>
+<details><summary>Day19 参考译文（翻完再点开）</summary><div class="en"><p>Although we try our best, sometimes our paintings rarely turn out as originally planned. Changes in the light, the limitations of your painting materials, and the lack of experience and technique mean that what you start out trying to achieve may not come to life the way that you expected.</p><p>Although this can be frustrating and disappointing, it turns out that this can actually be good for you. Unexpected results have two benefits: you pretty quickly learn to deal with disappointment, and realise that when one door closes, another opens. You also quickly learn to adapt and come up with creative solutions to the problems the painting presents, and thinking outside the box will become your second nature.</p><p>In fact, creative problem-solving skills are incredibly useful in daily life, with which you&#x27;re more likely to be able to find a solution when a problem arises.</p></div>
+<p>虽然我们竭尽所能，但有时我们的画作很少符合最初的计划。光线的改变、绘画材料的限制以及经验和技巧的不足，都意味着起初想要达到的效果未必能够如你所愿地呈现出来。</p>
 <p>尽管这难免让人沮丧失望，但结果其实可能对你有益。意料之外的结果有两个好处：你会很快学会处理失望情绪，并意识到当一扇门关上时，另一扇门就会打开。你也会很快学会适应，想出创造性的解决方案，解决画作中出现的问题，跳出常规进行思考会成为你的第二天性。</p>
 <p>事实上，创造性解决问题的技能在日常生活中极为有用，有了这种技能，发生问题时你就更有可能找到解决办法。</p>
 <p><strong>得分关键词</strong>：<code>turn out</code> 结果 / <code>come to life</code> 实现 / <code>deal with</code> 处理 / <code>come up with</code> 想出 / <code>think outside the box</code> 跳出思维定式 / <code>second nature</code> 第二天性 / <code>arise</code> 发生</p>
@@ -109,41 +112,37 @@ td,th{border:1px solid #e5e7eb;padding:8px 10px;text-align:left}
 <h3>Day20 阅读精读（20分钟）- 2022年英语二 Text 4 真题</h3>
 <blockquote><p><strong>真题信息</strong>：2022年全国硕士研究生招生考试英语（二），阅读理解 Text 4，主题为“道德课能否改变行为（吃肉实验）”。</p>
 <p><strong>做法</strong>：先盖住答案，18分钟读完做5题，再对答案。</p></blockquote>
-<p><strong>原文：</strong></p>
-<p class="en">Although ethics classes are common around the world, scientists are unsure if their lessons can actually change behavior; evidence either way is weak, relying on contrived laboratory tests or sometimes unreliable self-reports. But a new study published in Cognition found that, in at least one real-world situation, a single ethics lesson may have had lasting effects.</p>
-<p class="en">The researchers investigated one class session&#x27;s impact on eating meat. They chose this particular behavior for three reasons, according to study co-author Eric Schwitzgebel, a philosopher at the University of California, Riverside: students&#x27; attitudes on the topic are variable and unstable, behavior is easily measurable, and ethics literature largely agrees that eating less meat is good because it reduces environmental harm and animal suffering. Half of the students in four large philosophy classes read an article on the ethics of factory-farmed meat, optionally watched an 11-minute video on the topic and joined a 50-minute discussion. The other half focused on charitable giving instead. Then, unknown to the students, the researchers studied their anonymized meal-card purchases for that semester—nearly 14,000 receipts for almost 500 students.</p>
-<p class="en">Schwitzgebel predicted the intervention would have no effect; he had previously found that ethics professors do not differ from other professors on a range of behaviors, including voting rates, blood donation and returning library books. But among student subjects who discussed meat ethics, meal purchases containing meat decreased from 52 to 45 percent—and this effect held steady for the study&#x27;s duration of several weeks. Purchases from the other group remained at 52 percent.</p>
-<p class="en">&quot;That&#x27;s actually a pretty large effect for a pretty small intervention,&quot; Schwitzgebel says. Psychologist Nina Strohminger at the University of Pennsylvania, who was not involved in the study, says she wants the effect to be real but cannot rule out some unknown confounding variable. And if real, she notes, it might be reversible by another nudge: &quot;Easy come, easy go.&quot;</p>
-<p class="en">Schwitzgebel suspects the greatest impact came from social influence—classmates or teaching assistants leading the discussions may have shared their own vegetarianism, showing it as achievable or more common. Second, the video may have had an emotional impact. Least rousing, he thinks, was rational argument, although his co-authors say reason might play a bigger role. Now the researchers are probing the specific effects of teaching style, teaching assistants&#x27; eating habits and students&#x27; video exposure. Meanwhile, Schwitzgebel—who had predicted no effect—will be eating his words.</p>
-<p><strong>5题：</strong></p>
-<p>36. Scientists generally believe that the effects of ethics classes are ______.</p>
-<p>A. hard to determine</p>
-<p>B. narrowly interpreted</p>
-<p>C. difficult to ignore</p>
-<p>D. poorly summarized</p>
-<p>37. Which of the following is a reason for the researchers to study meat eating?</p>
-<p>A. It is common among students.</p>
-<p>B. It is a behavior easy to measure.</p>
-<p>C. It is important to students&#x27; health.</p>
-<p>D. It is a hot topic in ethics classes.</p>
-<p>38. Eric Schwitzgebel&#x27;s previous findings suggest that ethics professors ______.</p>
-<p>A. are seldom critical of their students</p>
-<p>B. are less sociable than other professors</p>
-<p>C. are not sensitive to political issues</p>
-<p>D. are not necessarily ethically better</p>
-<p>39. Nina Strohminger thinks that the effect of the intervention is ______.</p>
-<p>A. permanent</p>
-<p>B. predictable</p>
-<p>C. uncertain</p>
-<p>D. unrepeatable</p>
-<p>40. Eric Schwitzgebel suspects that the students&#x27; change in behavior ______.</p>
-<p>A. can bring psychological benefits</p>
-<p>B. can be analyzed statistically</p>
-<p>C. is a result of multiple factors</p>
-<p>D. is a sign of self-development</p>
+<div class="grp" data-grp="day19-25-g36"><span>原文：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
+<div class="grp" data-grp="day19-25-g37"><span>5题：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
+<p><strong>36. Scientists generally believe that the effects of ethics classes are ______.</strong></p>
+<button class="opt" data-q="day19-25-q36" data-o="A"><b>A.</b> hard to determine</button>
+<button class="opt" data-q="day19-25-q36" data-o="B"><b>B.</b> narrowly interpreted</button>
+<button class="opt" data-q="day19-25-q36" data-o="C"><b>C.</b> difficult to ignore</button>
+<button class="opt" data-q="day19-25-q36" data-o="D"><b>D.</b> poorly summarized</button>
+<p><strong>37. Which of the following is a reason for the researchers to study meat eating?</strong></p>
+<button class="opt" data-q="day19-25-q37" data-o="A"><b>A.</b> It is common among students.</button>
+<button class="opt" data-q="day19-25-q37" data-o="B"><b>B.</b> It is a behavior easy to measure.</button>
+<button class="opt" data-q="day19-25-q37" data-o="C"><b>C.</b> It is important to students&#x27; health.</button>
+<button class="opt" data-q="day19-25-q37" data-o="D"><b>D.</b> It is a hot topic in ethics classes.</button>
+<p><strong>38. Eric Schwitzgebel&#x27;s previous findings suggest that ethics professors ______.</strong></p>
+<button class="opt" data-q="day19-25-q38" data-o="A"><b>A.</b> are seldom critical of their students</button>
+<button class="opt" data-q="day19-25-q38" data-o="B"><b>B.</b> are less sociable than other professors</button>
+<button class="opt" data-q="day19-25-q38" data-o="C"><b>C.</b> are not sensitive to political issues</button>
+<button class="opt" data-q="day19-25-q38" data-o="D"><b>D.</b> are not necessarily ethically better</button>
+<p><strong>39. Nina Strohminger thinks that the effect of the intervention is ______.</strong></p>
+<button class="opt" data-q="day19-25-q39" data-o="A"><b>A.</b> permanent</button>
+<button class="opt" data-q="day19-25-q39" data-o="B"><b>B.</b> predictable</button>
+<button class="opt" data-q="day19-25-q39" data-o="C"><b>C.</b> uncertain</button>
+<button class="opt" data-q="day19-25-q39" data-o="D"><b>D.</b> unrepeatable</button>
+<p><strong>40. Eric Schwitzgebel suspects that the students&#x27; change in behavior ______.</strong></p>
+<button class="opt" data-q="day19-25-q40" data-o="A"><b>A.</b> can bring psychological benefits</button>
+<button class="opt" data-q="day19-25-q40" data-o="B"><b>B.</b> can be analyzed statistically</button>
+<button class="opt" data-q="day19-25-q40" data-o="C"><b>C.</b> is a result of multiple factors</button>
+<button class="opt" data-q="day19-25-q40" data-o="D"><b>D.</b> is a sign of self-development</button>
 <label class="task"><input type="checkbox" data-k="day19-25_117"><span>18分钟做完，写下答案</span></label>
 <label class="task"><input type="checkbox" data-k="day19-25_118"><span>对答案见折叠区</span></label>
-<details><summary>Day20 答案&amp;解析（做完再点开）</summary><p><strong>答案：</strong> 36. A　37. B　38. D　39. C　40. C</p>
+<details><summary>Day20 答案&amp;解析（做完再点开）</summary><div class="en"><p>Although ethics classes are common around the world, scientists are unsure if their lessons can actually change behavior; evidence either way is weak, relying on contrived laboratory tests or sometimes unreliable self-reports. But a new study published in Cognition found that, in at least one real-world situation, a single ethics lesson may have had lasting effects.</p><p>The researchers investigated one class session&#x27;s impact on eating meat. They chose this particular behavior for three reasons, according to study co-author Eric Schwitzgebel, a philosopher at the University of California, Riverside: students&#x27; attitudes on the topic are variable and unstable, behavior is easily measurable, and ethics literature largely agrees that eating less meat is good because it reduces environmental harm and animal suffering. Half of the students in four large philosophy classes read an article on the ethics of factory-farmed meat, optionally watched an 11-minute video on the topic and joined a 50-minute discussion. The other half focused on charitable giving instead. Then, unknown to the students, the researchers studied their anonymized meal-card purchases for that semester—nearly 14,000 receipts for almost 500 students.</p><p>Schwitzgebel predicted the intervention would have no effect; he had previously found that ethics professors do not differ from other professors on a range of behaviors, including voting rates, blood donation and returning library books. But among student subjects who discussed meat ethics, meal purchases containing meat decreased from 52 to 45 percent—and this effect held steady for the study&#x27;s duration of several weeks. Purchases from the other group remained at 52 percent.</p><p>&quot;That&#x27;s actually a pretty large effect for a pretty small intervention,&quot; Schwitzgebel says. Psychologist Nina Strohminger at the University of Pennsylvania, who was not involved in the study, says she wants the effect to be real but cannot rule out some unknown confounding variable. And if real, she notes, it might be reversible by another nudge: &quot;Easy come, easy go.&quot;</p><p>Schwitzgebel suspects the greatest impact came from social influence—classmates or teaching assistants leading the discussions may have shared their own vegetarianism, showing it as achievable or more common. Second, the video may have had an emotional impact. Least rousing, he thinks, was rational argument, although his co-authors say reason might play a bigger role. Now the researchers are probing the specific effects of teaching style, teaching assistants&#x27; eating habits and students&#x27; video exposure. Meanwhile, Schwitzgebel—who had predicted no effect—will be eating his words.</p></div>
+<p><strong>答案：</strong> 36. A　37. B　38. D　39. C　40. C</p>
 <p>1. <strong>A</strong>：首句 <code>scientists are unsure if their lessons can actually change behavior</code>，影响难以确定。</p>
 <p>2. <strong>B</strong>：第二段三理由之一 <code>behavior is easily measurable</code>，吃肉行为易衡量。</p>
 <p>3. <strong>D</strong>：第三段 <code>ethics professors do not differ from other professors</code>，伦理学教授未必更有道德。</p>
@@ -169,42 +168,37 @@ Only in this way would ______.</code></pre>
 <h3>Day21 阅读精读（20分钟）- 2023年英语二 Text 1 真题</h3>
 <blockquote><p><strong>真题信息</strong>：2023年全国硕士研究生招生考试英语（二），阅读理解 Text 1，主题为“塑料草坪之争”。</p>
 <p><strong>做法</strong>：先盖住答案，18分钟读完做5题，再对答案。</p></blockquote>
-<p><strong>原文：</strong></p>
-<p class="en">In the quest for the perfect lawn, homeowners across the country are taking a shortcut—and it is the environment that is paying the price. About eight million square metres of plastic grass is sold each year but opposition has now spread to the highest gardening circles. The Chelsea Flower Show has banned fake grass from this year&#x27;s event, declaring it to be not part of its ethos. The Royal Horticultural Society (RHS), which runs the annual show in west London, says it has introduced the ban because of the damage plastic grass does to the environment and biodiversity.</p>
-<p class="en">Ed Home, of the RHS, said: &quot;We launched our sustainability strategy last year and fake grass is just not in line with our ethos and views on plastic. We recommend using real grass because of its environmental benefits, which include supporting wildlife, alleviating flooding and cooling the environment.&quot;</p>
-<p class="en">The RHS&#x27;s decision comes as campaigners try to raise awareness of the problems fake grass causes. A Twitter account, which claims to &quot;cut through the greenwash&quot; of artificial grass, already has more than 20,000 followers. It is trying to encourage people to sign two petitions, one calling for a ban on the sale of plastic grass and another calling for an &quot;ecological damage&quot; tax on such lawns. They have gathered 7,276 and 11,282 signatures.</p>
-<p class="en">However, supporters of fake grass point out that there is also an environmental impact with natural lawns, which need mowing and therefore usually consume electricity or petrol. The industry also points out that real grass requires considerable amounts of water, weed killer or other treatments and that people who lay fake grass tend to use their garden more. The industry also claims that people who lay fake grass spend an average of £500 on trees or shrubs for their garden, which provides habitat for insects.</p>
-<p class="en">In response to another petition last year about banning fake lawns, which gathered 30,000 signatures, the government responded that it has &quot;no plans to ban the use of artificial grass&quot;.</p>
-<p class="en">It added: &quot;We prefer to help people and organisations make the right choice rather than legislating on such matters. However, the use of artificial grass must comply with the legal and policy safeguards in place to protect biodiversity and ensure sustainable drainage, while measures such as the strengthened biodiversity duty should serve to encourage public authorities to consider sustainable alternatives.&quot;</p>
-<p><strong>5题：</strong></p>
-<p>21. The RHS thinks that plastic grass ______.</p>
-<p>A. is harmful to the environment</p>
-<p>B. is a hot topic in gardening circles</p>
-<p>C. is overpraised in the annual show</p>
-<p>D. is ruining the view of west London</p>
-<p>22. The petitions mentioned in Paragraph 3 reveal the campaigners&#x27; ______.</p>
-<p>A. disappointment with the RHS</p>
-<p>B. resistance to fake grass use</p>
-<p>C. anger over the proposed tax</p>
-<p>D. concern about real grass supply</p>
-<p>23. In Paragraph 4, supporters of fake grass point out ______.</p>
-<p>A. the necessity to lower the costs of fake grass</p>
-<p>B. the disadvantages of growing real grass</p>
-<p>C. the way to take care of artificial lawns</p>
-<p>D. the challenges of insect habitat protection</p>
-<p>24. What would the government do with regard to artificial grass?</p>
-<p>A. Urge legislation to restrict its use.</p>
-<p>B. Take measures to guarantee its quality.</p>
-<p>C. Remind its users to obey existing rules.</p>
-<p>D. Replace it with sustainable alternatives.</p>
-<p>25. It can be learned from the text that fake grass ______.</p>
-<p>A. is being improved continuously</p>
-<p>B. has seen a market share decline</p>
-<p>C. is becoming increasingly affordable</p>
-<p>D. has been a controversial product</p>
+<div class="grp" data-grp="day19-25-g38"><span>原文：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
+<div class="grp" data-grp="day19-25-g39"><span>5题：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
+<p><strong>21. The RHS thinks that plastic grass ______.</strong></p>
+<button class="opt" data-q="day19-25-q21" data-o="A"><b>A.</b> is harmful to the environment</button>
+<button class="opt" data-q="day19-25-q21" data-o="B"><b>B.</b> is a hot topic in gardening circles</button>
+<button class="opt" data-q="day19-25-q21" data-o="C"><b>C.</b> is overpraised in the annual show</button>
+<button class="opt" data-q="day19-25-q21" data-o="D"><b>D.</b> is ruining the view of west London</button>
+<p><strong>22. The petitions mentioned in Paragraph 3 reveal the campaigners&#x27; ______.</strong></p>
+<button class="opt" data-q="day19-25-q22" data-o="A"><b>A.</b> disappointment with the RHS</button>
+<button class="opt" data-q="day19-25-q22" data-o="B"><b>B.</b> resistance to fake grass use</button>
+<button class="opt" data-q="day19-25-q22" data-o="C"><b>C.</b> anger over the proposed tax</button>
+<button class="opt" data-q="day19-25-q22" data-o="D"><b>D.</b> concern about real grass supply</button>
+<p><strong>23. In Paragraph 4, supporters of fake grass point out ______.</strong></p>
+<button class="opt" data-q="day19-25-q23" data-o="A"><b>A.</b> the necessity to lower the costs of fake grass</button>
+<button class="opt" data-q="day19-25-q23" data-o="B"><b>B.</b> the disadvantages of growing real grass</button>
+<button class="opt" data-q="day19-25-q23" data-o="C"><b>C.</b> the way to take care of artificial lawns</button>
+<button class="opt" data-q="day19-25-q23" data-o="D"><b>D.</b> the challenges of insect habitat protection</button>
+<p><strong>24. What would the government do with regard to artificial grass?</strong></p>
+<button class="opt" data-q="day19-25-q24" data-o="A"><b>A.</b> Urge legislation to restrict its use.</button>
+<button class="opt" data-q="day19-25-q24" data-o="B"><b>B.</b> Take measures to guarantee its quality.</button>
+<button class="opt" data-q="day19-25-q24" data-o="C"><b>C.</b> Remind its users to obey existing rules.</button>
+<button class="opt" data-q="day19-25-q24" data-o="D"><b>D.</b> Replace it with sustainable alternatives.</button>
+<p><strong>25. It can be learned from the text that fake grass ______.</strong></p>
+<button class="opt" data-q="day19-25-q25" data-o="A"><b>A.</b> is being improved continuously</button>
+<button class="opt" data-q="day19-25-q25" data-o="B"><b>B.</b> has seen a market share decline</button>
+<button class="opt" data-q="day19-25-q25" data-o="C"><b>C.</b> is becoming increasingly affordable</button>
+<button class="opt" data-q="day19-25-q25" data-o="D"><b>D.</b> has been a controversial product</button>
 <label class="task"><input type="checkbox" data-k="day19-25_121"><span>18分钟做完，写下答案</span></label>
 <label class="task"><input type="checkbox" data-k="day19-25_122"><span>对答案见折叠区</span></label>
-<details><summary>Day21 答案&amp;解析（做完再点开）</summary><p><strong>答案：</strong> 21. A　22. B　23. B　24. C　25. D</p>
+<details><summary>Day21 答案&amp;解析（做完再点开）</summary><div class="en"><p>In the quest for the perfect lawn, homeowners across the country are taking a shortcut—and it is the environment that is paying the price. About eight million square metres of plastic grass is sold each year but opposition has now spread to the highest gardening circles. The Chelsea Flower Show has banned fake grass from this year&#x27;s event, declaring it to be not part of its ethos. The Royal Horticultural Society (RHS), which runs the annual show in west London, says it has introduced the ban because of the damage plastic grass does to the environment and biodiversity.</p><p>Ed Home, of the RHS, said: &quot;We launched our sustainability strategy last year and fake grass is just not in line with our ethos and views on plastic. We recommend using real grass because of its environmental benefits, which include supporting wildlife, alleviating flooding and cooling the environment.&quot;</p><p>The RHS&#x27;s decision comes as campaigners try to raise awareness of the problems fake grass causes. A Twitter account, which claims to &quot;cut through the greenwash&quot; of artificial grass, already has more than 20,000 followers. It is trying to encourage people to sign two petitions, one calling for a ban on the sale of plastic grass and another calling for an &quot;ecological damage&quot; tax on such lawns. They have gathered 7,276 and 11,282 signatures.</p><p>However, supporters of fake grass point out that there is also an environmental impact with natural lawns, which need mowing and therefore usually consume electricity or petrol. The industry also points out that real grass requires considerable amounts of water, weed killer or other treatments and that people who lay fake grass tend to use their garden more. The industry also claims that people who lay fake grass spend an average of £500 on trees or shrubs for their garden, which provides habitat for insects.</p><p>In response to another petition last year about banning fake lawns, which gathered 30,000 signatures, the government responded that it has &quot;no plans to ban the use of artificial grass&quot;.</p><p>It added: &quot;We prefer to help people and organisations make the right choice rather than legislating on such matters. However, the use of artificial grass must comply with the legal and policy safeguards in place to protect biodiversity and ensure sustainable drainage, while measures such as the strengthened biodiversity duty should serve to encourage public authorities to consider sustainable alternatives.&quot;</p></div>
+<p><strong>答案：</strong> 21. A　22. B　23. B　24. C　25. D</p>
 <p>1. <strong>A</strong>：首段末 <code>the damage plastic grass does to the environment</code>，RHS认为塑料草有害环境。</p>
 <p>2. <strong>B</strong>：第三段两份请愿（一禁售一征税）表明活动人士抵制人造草。</p>
 <p>3. <strong>B</strong>：第四段天然草坪也要修剪耗电耗水耗药，支持者在说真草的缺点。</p>
@@ -216,56 +210,48 @@ Only in this way would ______.</code></pre>
 <h3>Day21 大作文（20分钟）- 2023年真题：健康素养折线图</h3>
 <blockquote><p><strong>真题信息</strong>：2023年英语（二）大作文 Q48：折线图，2012—2021年中国居民健康素养水平从8.80%持续上升到25.40%，2016年增速明显加快。150词左右，15分。</p>
 <p><strong>做法</strong>：同一套模板，第三遍填新数据——这次是折线图，练“持续上升+拐点”句式。</p></blockquote>
-<p><strong>必背范文（约170词）：</strong></p>
-<p class="en">What is illustrated in the line chart clearly shows that the health literacy rate of Chinese residents changed greatly from 2012 to 2021. To be specific, these years witnessed an uninterrupted rise in the rate from 8.80% to 25.40%. Notably, the year 2016 marked a watershed when the growth accelerated considerably.</p>
-<p class="en">There are many factors contributing to this phenomenon, but overall, they may be put down to the following two aspects. Initially, there is no doubt that with the rapid economic development in recent years, people&#x27;s living standards and educational levels have been improved remarkably, as a result of which, residents are more aware of their health. At the same time, along with the prosperity of technology and the advancement of the Internet, digital health services such as online consultation have enabled people to gain easy access to professional advice.</p>
-<p class="en">Considering all these contributors, we should bear in mind that great importance should be attached to public health. As far as I am concerned, it is a positive trend and should be stimulated, since it is conducive not merely to individuals but to the whole society.</p>
+<div class="grp" data-grp="day19-25-g40"><span>必背范文（约170词）：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
 <label class="task"><input type="checkbox" data-k="day19-25_123"><span><strong>背10分钟</strong>：数据句（8.80%→25.40%，2016拐点）→ 生活水平+数字医疗两条原因 → 积极评价</span></label>
 <label class="task"><input type="checkbox" data-k="day19-25_124"><span><strong>默10分钟</strong>：盖住默写，两个数字+2016不错</span></label>
-<blockquote><p><strong>模板对照记忆点</strong>：折线图专用句 <code>witnessed an uninterrupted rise from... to...</code> + <code>marked a watershed</code>；三套数据（快递/锻炼/健康）同一骨架，考场只换数字。</p></blockquote>
+<blockquote><div class="en"><p>What is illustrated in the line chart clearly shows that the health literacy rate of Chinese residents changed greatly from 2012 to 2021. To be specific, these years witnessed an uninterrupted rise in the rate from 8.80% to 25.40%. Notably, the year 2016 marked a watershed when the growth accelerated considerably.</p><p>There are many factors contributing to this phenomenon, but overall, they may be put down to the following two aspects. Initially, there is no doubt that with the rapid economic development in recent years, people&#x27;s living standards and educational levels have been improved remarkably, as a result of which, residents are more aware of their health. At the same time, along with the prosperity of technology and the advancement of the Internet, digital health services such as online consultation have enabled people to gain easy access to professional advice.</p><p>Considering all these contributors, we should bear in mind that great importance should be attached to public health. As far as I am concerned, it is a positive trend and should be stimulated, since it is conducive not merely to individuals but to the whole society.</p></div>
+<p><strong>模板对照记忆点</strong>：折线图专用句 <code>witnessed an uninterrupted rise from... to...</code> + <code>marked a watershed</code>；三套数据（快递/锻炼/健康）同一骨架，考场只换数字。</p></blockquote>
 <hr>
 <h2 id="day19-25-s3">考研英语范文 - Day22 今日任务</h2>
 <blockquote><p><strong>今天1小时20分：2023年英语二 Text 2 + 2020年翻译（失败）。Day21塑料草坪记得睡前30秒回顾。</strong></p></blockquote>
 <h3>Day22 阅读精读（20分钟）- 2023年英语二 Text 2 真题</h3>
 <blockquote><p><strong>真题信息</strong>：2023年全国硕士研究生招生考试英语（二），阅读理解 Text 2，主题为“美国国家公园资金危机与私有化之争”。</p>
 <p><strong>做法</strong>：先盖住答案，18分钟读完做5题，再对答案。</p></blockquote>
-<p><strong>原文：</strong></p>
-<p class="en">It&#x27;s easy to dismiss as absurd the federal government&#x27;s ideas for plugging the chronic funding gap of our national parks. Can anyone really think it&#x27;s a good idea to allow Amazon deliveries to your tent in Yosemite or food trucks to line up under the redwood trees at Sequoia National Park?</p>
-<p class="en">But the government is right about one thing: U.S. national parks are in crisis. Collectively, they have a maintenance backlog of more than $12 billion. Roads, trails, restrooms, visitor centers and other infrastructure are crumbling.</p>
-<p class="en">But privatizing and commercializing the campgrounds would not be a cure-all. Campgrounds are a tiny portion of the overall infrastructure backlog, and businesses in the parks hand over, on average, only about 5% of their revenues to the National Park Service.</p>
-<p class="en">Moreover, increased privatization would certainly undercut one of the major reasons why 300 million visitors come to the parks each year: to enjoy nature and get a break from the commercial drumbeat that overwhelms daily life.</p>
-<p class="en">The real problem is that the parks have been chronically starved of funding. An economic survey of 700 U.S. taxpayers found that people would be willing to pay a significant amount of money to make sure the parks and their programs are kept intact. Some 81% of respondents said they would be willing to pay additional taxes for the next 10 years to avoid any cuts to the national parks.</p>
-<p class="en">The national parks provide great value to U.S. residents both as places to escape and as symbols of nature. On top of this, they produce value from their extensive educational programs, their positive impact on the climate through carbon sequestration, their contribution to our cultural and artistic life, and of course through tourism. The parks also help keep America&#x27;s past alive, working with thousands of local jurisdictions around the country to protect historical sites and to bring the stories of these places to life.</p>
-<p class="en">The parks do all this on a shoestring. Congress allocates only $3 billion a year to the national park system—an amount that has been flat since 2001 (in inflation-adjusted dollars) with the exception of a onetime boost in 2009. Meanwhile, the number of annual visitors has increased by more than 50% since 1980, and now stands at 330 million visitors per year.</p>
-<p><strong>5题：</strong></p>
-<p>26. What problem are U.S. national parks faced with?</p>
-<p>A. Decline of business profits.</p>
-<p>B. Inadequate commercialization.</p>
-<p>C. Lack of transportation services.</p>
-<p>D. Poorly maintained infrastructure.</p>
-<p>27. Increased privatization of the campgrounds may ______.</p>
-<p>A. spoil visitor experience</p>
-<p>B. help preserve nature</p>
-<p>C. bring operational pressure</p>
-<p>D. boost visits to parks</p>
-<p>28. According to Paragraph 5, most respondents in the survey would ______.</p>
-<p>A. go to the national parks on a regular basis</p>
-<p>B. advocate a bigger budget for the national parks</p>
-<p>C. agree to pay extra for the national parks</p>
-<p>D. support the national parks&#x27; recent reforms</p>
-<p>29. The national parks are valuable in that they ______.</p>
-<p>A. lead the way in tourism</p>
-<p>B. have historical significance</p>
-<p>C. sponsor research on climate</p>
-<p>D. provide an income for the locals</p>
-<p>30. It can be concluded from the text that the national park system ______.</p>
-<p>A. is able to cope with staff shortages</p>
-<p>B. is able to meet visitors&#x27; demands</p>
-<p>C. is in need of a new pricing policy</p>
-<p>D. is in need of a funding increase</p>
+<div class="grp" data-grp="day19-25-g41"><span>原文：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
+<div class="grp" data-grp="day19-25-g42"><span>5题：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
+<p><strong>26. What problem are U.S. national parks faced with?</strong></p>
+<button class="opt" data-q="day19-25-q26" data-o="A"><b>A.</b> Decline of business profits.</button>
+<button class="opt" data-q="day19-25-q26" data-o="B"><b>B.</b> Inadequate commercialization.</button>
+<button class="opt" data-q="day19-25-q26" data-o="C"><b>C.</b> Lack of transportation services.</button>
+<button class="opt" data-q="day19-25-q26" data-o="D"><b>D.</b> Poorly maintained infrastructure.</button>
+<p><strong>27. Increased privatization of the campgrounds may ______.</strong></p>
+<button class="opt" data-q="day19-25-q27" data-o="A"><b>A.</b> spoil visitor experience</button>
+<button class="opt" data-q="day19-25-q27" data-o="B"><b>B.</b> help preserve nature</button>
+<button class="opt" data-q="day19-25-q27" data-o="C"><b>C.</b> bring operational pressure</button>
+<button class="opt" data-q="day19-25-q27" data-o="D"><b>D.</b> boost visits to parks</button>
+<p><strong>28. According to Paragraph 5, most respondents in the survey would ______.</strong></p>
+<button class="opt" data-q="day19-25-q28" data-o="A"><b>A.</b> go to the national parks on a regular basis</button>
+<button class="opt" data-q="day19-25-q28" data-o="B"><b>B.</b> advocate a bigger budget for the national parks</button>
+<button class="opt" data-q="day19-25-q28" data-o="C"><b>C.</b> agree to pay extra for the national parks</button>
+<button class="opt" data-q="day19-25-q28" data-o="D"><b>D.</b> support the national parks&#x27; recent reforms</button>
+<p><strong>29. The national parks are valuable in that they ______.</strong></p>
+<button class="opt" data-q="day19-25-q29" data-o="A"><b>A.</b> lead the way in tourism</button>
+<button class="opt" data-q="day19-25-q29" data-o="B"><b>B.</b> have historical significance</button>
+<button class="opt" data-q="day19-25-q29" data-o="C"><b>C.</b> sponsor research on climate</button>
+<button class="opt" data-q="day19-25-q29" data-o="D"><b>D.</b> provide an income for the locals</button>
+<p><strong>30. It can be concluded from the text that the national park system ______.</strong></p>
+<button class="opt" data-q="day19-25-q30" data-o="A"><b>A.</b> is able to cope with staff shortages</button>
+<button class="opt" data-q="day19-25-q30" data-o="B"><b>B.</b> is able to meet visitors&#x27; demands</button>
+<button class="opt" data-q="day19-25-q30" data-o="C"><b>C.</b> is in need of a new pricing policy</button>
+<button class="opt" data-q="day19-25-q30" data-o="D"><b>D.</b> is in need of a funding increase</button>
 <label class="task"><input type="checkbox" data-k="day19-25_125"><span>18分钟做完，写下答案</span></label>
 <label class="task"><input type="checkbox" data-k="day19-25_126"><span>对答案见折叠区</span></label>
-<details><summary>Day22 答案&amp;解析（做完再点开）</summary><p><strong>答案：</strong> 26. D　27. A　28. C　29. B　30. D</p>
+<details><summary>Day22 答案&amp;解析（做完再点开）</summary><div class="en"><p>It&#x27;s easy to dismiss as absurd the federal government&#x27;s ideas for plugging the chronic funding gap of our national parks. Can anyone really think it&#x27;s a good idea to allow Amazon deliveries to your tent in Yosemite or food trucks to line up under the redwood trees at Sequoia National Park?</p><p>But the government is right about one thing: U.S. national parks are in crisis. Collectively, they have a maintenance backlog of more than $12 billion. Roads, trails, restrooms, visitor centers and other infrastructure are crumbling.</p><p>But privatizing and commercializing the campgrounds would not be a cure-all. Campgrounds are a tiny portion of the overall infrastructure backlog, and businesses in the parks hand over, on average, only about 5% of their revenues to the National Park Service.</p><p>Moreover, increased privatization would certainly undercut one of the major reasons why 300 million visitors come to the parks each year: to enjoy nature and get a break from the commercial drumbeat that overwhelms daily life.</p><p>The real problem is that the parks have been chronically starved of funding. An economic survey of 700 U.S. taxpayers found that people would be willing to pay a significant amount of money to make sure the parks and their programs are kept intact. Some 81% of respondents said they would be willing to pay additional taxes for the next 10 years to avoid any cuts to the national parks.</p><p>The national parks provide great value to U.S. residents both as places to escape and as symbols of nature. On top of this, they produce value from their extensive educational programs, their positive impact on the climate through carbon sequestration, their contribution to our cultural and artistic life, and of course through tourism. The parks also help keep America&#x27;s past alive, working with thousands of local jurisdictions around the country to protect historical sites and to bring the stories of these places to life.</p><p>The parks do all this on a shoestring. Congress allocates only $3 billion a year to the national park system—an amount that has been flat since 2001 (in inflation-adjusted dollars) with the exception of a onetime boost in 2009. Meanwhile, the number of annual visitors has increased by more than 50% since 1980, and now stands at 330 million visitors per year.</p></div>
+<p><strong>答案：</strong> 26. D　27. A　28. C　29. B　30. D</p>
 <p>1. <strong>D</strong>：第二段 <code>maintenance backlog of more than $12 billion</code> + <code>infrastructure are crumbling</code>，基础设施失修。</p>
 <p>2. <strong>A</strong>：第四段 <code>undercut one of the major reasons why... visitors come... to enjoy nature</code>，私有化破坏游园体验。</p>
 <p>3. <strong>C</strong>：第五段 <code>81%... willing to pay additional taxes</code>，多数人愿多缴税保公园。</p>
@@ -277,13 +263,11 @@ Only in this way would ______.</code></pre>
 <h3>Day22 翻译（40分钟）- 2020年真题：失败的意义</h3>
 <blockquote><p><strong>真题信息</strong>：2020年英语（二）翻译 Q46，约150词，15分。节选自 MindTools《克服对失败的恐惧》。</p>
 <p><strong>做法</strong>：先自己翻一遍（25分钟），再对参考译文找差距（15分钟）。句子短、搭配多，注意 <code>be up to / keep from / stop</code> 的翻法。</p></blockquote>
-<p><strong>英文原文：</strong></p>
-<p class="en">It&#x27;s almost impossible to go through life without experiencing some kind of failure. But, the wonderful thing about failure is that it&#x27;s entirely up to us to decide how to look at it.</p>
-<p class="en">We can choose to see failure as &quot;the end of the world&quot;. Or, we can look at failure as the incredible learning experience that it often is. Every time we fail at something, we can choose to look for the lesson we&#x27;re meant to learn. These lessons are very important; they&#x27;re how we grow, and how we keep from making that same mistake again. Failures stop us only if we let them.</p>
-<p class="en">Failure can also teach us things about ourselves that we would never have learned otherwise. For instance, failure can help you discover how strong a person you are. Failing at something can help you discover your truest friends, or help you find unexpected motivation to succeed.</p>
+<div class="grp" data-grp="day19-25-g43"><span>英文原文：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
 <label class="task"><input type="checkbox" data-k="day19-25_127"><span><strong>翻25分钟</strong>：逐句翻，<code>go through / be up to / keep from</code> 三个搭配别翻错；末段三个并列 <code>help you discover/find</code> 别漏</span></label>
 <label class="task"><input type="checkbox" data-k="day19-25_128"><span><strong>对15分钟</strong>：对照折叠区参考译文，用红笔标出漏翻、错翻的关键词</span></label>
-<details><summary>Day22 参考译文（翻完再点开）</summary><p>人的一生几乎不可能不经受某些失败。但是，失败的奇妙之处在于，它完全取决于我们如何看待它。</p>
+<details><summary>Day22 参考译文（翻完再点开）</summary><div class="en"><p>It&#x27;s almost impossible to go through life without experiencing some kind of failure. But, the wonderful thing about failure is that it&#x27;s entirely up to us to decide how to look at it.</p><p>We can choose to see failure as &quot;the end of the world&quot;. Or, we can look at failure as the incredible learning experience that it often is. Every time we fail at something, we can choose to look for the lesson we&#x27;re meant to learn. These lessons are very important; they&#x27;re how we grow, and how we keep from making that same mistake again. Failures stop us only if we let them.</p><p>Failure can also teach us things about ourselves that we would never have learned otherwise. For instance, failure can help you discover how strong a person you are. Failing at something can help you discover your truest friends, or help you find unexpected motivation to succeed.</p></div>
+<p>人的一生几乎不可能不经受某些失败。但是，失败的奇妙之处在于，它完全取决于我们如何看待它。</p>
 <p>我们可以把失败看作“世界末日”。我们也可以将它视为极好的学习经历，它常常就是如此。每一次失败时，我们都可以从中找寻应该吸取的教训。这些教训非常重要；它们使我们成长，也使我们不再犯同样的错误。只有任由失败阻止我们，我们才会被它阻止。</p>
 <p>失败也能教给我们一些有关我们自己的事情，没有失败，这些事情我们永远不会了解。比如，失败可以帮你发现自己有多么坚强。失败可以帮你发现最真诚的朋友，或者帮你找到意想不到的成功动力。</p>
 <p><strong>得分关键词</strong>：<code>go through</code> 经历 / <code>be up to sb.</code> 取决于 / <code>incredible</code> 极好的 / <code>keep from</code> 阻止…不再 / <code>stop</code> 阻止 / <code>otherwise</code> 否则（虚拟含义） / <code>truest</code> 最真诚的</p>
@@ -294,40 +278,37 @@ Only in this way would ______.</code></pre>
 <h3>Day23 阅读精读（20分钟）- 2023年英语二 Text 3 真题</h3>
 <blockquote><p><strong>真题信息</strong>：2023年全国硕士研究生招生考试英语（二），阅读理解 Text 3，主题为“互联网与人类记忆（认知卸载）”。</p>
 <p><strong>做法</strong>：先盖住答案，18分钟读完做5题，再对答案。</p></blockquote>
-<p><strong>原文：</strong></p>
-<p class="en">The Internet may be changing merely what we remember, not our capacity to do so, suggests Columbia University psychology professor Betsy Sparrow. In 2011, Sparrow led a study in which participants were asked to record 40 factoids in a computer (&quot;an ostrich&#x27;s eye is bigger than its brain,&quot; for example). Half of the participants were told the information would be erased, while the other half were told it would be saved. Guess what? The latter group made no effort to recall the information when quizzed on it later, because they knew they could find it on their computers. In the same study, a group was asked to remember both the information and the folders it was stored in. They didn&#x27;t remember the information, but they remembered how to find the folders. In other words, human memory is not deteriorating but &quot;adapting to new communications technology,&quot; Sparrow says.</p>
-<p class="en">In a very practical way, the Internet is becoming an external hard drive for our memories, a process known as &quot;cognitive offloading.&quot; Traditionally, this role was fulfilled by data banks, libraries, and other humans. Your father may never remember birthdays because your mother does, for instance. Some worry that this is having a destructive effect on society, but Sparrow sees an upside. Perhaps, she suggests, the trend will change our approach to learning from a focus on individual facts and memorization to an emphasis on more conceptual thinking—something that is not available on the Internet. &quot;I personally have never seen all that much intellectual value in memorizing things,&quot; Sparrow says, adding that we haven&#x27;t lost our ability to do it.</p>
-<p class="en">Still other experts say it&#x27;s too soon to understand how the Internet affects our brains. There is no experimental evidence showing that it interferes with our ability to focus, for instance, wrote psychologists Christopher Chabris and Daniel J. Simons. And surfing the web exercised the brain more than reading did among computer-savvy older adults in a 2008 study involving 24 participants at the Semel Institute for Neuroscience and Human Behavior at the University of California, Los Angeles.</p>
-<p class="en">&quot;There may be costs associated with our increased reliance on the Internet, but I&#x27;d have to imagine that overall the benefits are going to outweigh those costs,&quot; observes psychology professor Benjamin Storm. &quot;It seems pretty clear that memory is changing, but is it changing for the better? At this point, we don&#x27;t know.&quot;</p>
-<p><strong>5题：</strong></p>
-<p>31. Sparrow&#x27;s study shows that with the Internet, the human brain will ______.</p>
-<p>A. analyze information in detail</p>
-<p>B. collect information efficiently</p>
-<p>C. switch its focus of memory</p>
-<p>D. extend its memory duration</p>
-<p>32. The process of &quot;cognitive offloading&quot; ______.</p>
-<p>A. helps us identify false information</p>
-<p>B. keeps our memory from failing</p>
-<p>C. enables us to classify trivial facts</p>
-<p>D. lessens our memory burdens</p>
-<p>33. Which of the following would Sparrow support about the Internet?</p>
-<p>A. It may reform our learning approach.</p>
-<p>B. It may impact our society negatively.</p>
-<p>C. It may enhance our adaptability to technology.</p>
-<p>D. It may interfere with our conceptual thinking.</p>
-<p>34. It is indicated in Paragraph 3 that how the Internet affects our brains ______.</p>
-<p>A. requires further academic research</p>
-<p>B. is most studied in older adults</p>
-<p>C. is reflected in our reading speed</p>
-<p>D. depends on our web-surfing habits</p>
-<p>35. Neither Sparrow nor Storm would agree that ______.</p>
-<p>A. our reliance on the Internet will be costly</p>
-<p>B. the Internet is weakening our memory</p>
-<p>C. memory exercise is a must for our brains</p>
-<p>D. our ability to focus declines with age</p>
+<div class="grp" data-grp="day19-25-g44"><span>原文：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
+<div class="grp" data-grp="day19-25-g45"><span>5题：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
+<p><strong>31. Sparrow&#x27;s study shows that with the Internet, the human brain will ______.</strong></p>
+<button class="opt" data-q="day19-25-q31" data-o="A"><b>A.</b> analyze information in detail</button>
+<button class="opt" data-q="day19-25-q31" data-o="B"><b>B.</b> collect information efficiently</button>
+<button class="opt" data-q="day19-25-q31" data-o="C"><b>C.</b> switch its focus of memory</button>
+<button class="opt" data-q="day19-25-q31" data-o="D"><b>D.</b> extend its memory duration</button>
+<p><strong>32. The process of &quot;cognitive offloading&quot; ______.</strong></p>
+<button class="opt" data-q="day19-25-q32" data-o="A"><b>A.</b> helps us identify false information</button>
+<button class="opt" data-q="day19-25-q32" data-o="B"><b>B.</b> keeps our memory from failing</button>
+<button class="opt" data-q="day19-25-q32" data-o="C"><b>C.</b> enables us to classify trivial facts</button>
+<button class="opt" data-q="day19-25-q32" data-o="D"><b>D.</b> lessens our memory burdens</button>
+<p><strong>33. Which of the following would Sparrow support about the Internet?</strong></p>
+<button class="opt" data-q="day19-25-q33" data-o="A"><b>A.</b> It may reform our learning approach.</button>
+<button class="opt" data-q="day19-25-q33" data-o="B"><b>B.</b> It may impact our society negatively.</button>
+<button class="opt" data-q="day19-25-q33" data-o="C"><b>C.</b> It may enhance our adaptability to technology.</button>
+<button class="opt" data-q="day19-25-q33" data-o="D"><b>D.</b> It may interfere with our conceptual thinking.</button>
+<p><strong>34. It is indicated in Paragraph 3 that how the Internet affects our brains ______.</strong></p>
+<button class="opt" data-q="day19-25-q34" data-o="A"><b>A.</b> requires further academic research</button>
+<button class="opt" data-q="day19-25-q34" data-o="B"><b>B.</b> is most studied in older adults</button>
+<button class="opt" data-q="day19-25-q34" data-o="C"><b>C.</b> is reflected in our reading speed</button>
+<button class="opt" data-q="day19-25-q34" data-o="D"><b>D.</b> depends on our web-surfing habits</button>
+<p><strong>35. Neither Sparrow nor Storm would agree that ______.</strong></p>
+<button class="opt" data-q="day19-25-q35" data-o="A"><b>A.</b> our reliance on the Internet will be costly</button>
+<button class="opt" data-q="day19-25-q35" data-o="B"><b>B.</b> the Internet is weakening our memory</button>
+<button class="opt" data-q="day19-25-q35" data-o="C"><b>C.</b> memory exercise is a must for our brains</button>
+<button class="opt" data-q="day19-25-q35" data-o="D"><b>D.</b> our ability to focus declines with age</button>
 <label class="task"><input type="checkbox" data-k="day19-25_129"><span>18分钟做完，写下答案</span></label>
 <label class="task"><input type="checkbox" data-k="day19-25_130"><span>对答案见折叠区</span></label>
-<details><summary>Day23 答案&amp;解析（做完再点开）</summary><p><strong>答案：</strong> 31. C　32. D　33. A　34. A　35. B</p>
+<details><summary>Day23 答案&amp;解析（做完再点开）</summary><div class="en"><p>The Internet may be changing merely what we remember, not our capacity to do so, suggests Columbia University psychology professor Betsy Sparrow. In 2011, Sparrow led a study in which participants were asked to record 40 factoids in a computer (&quot;an ostrich&#x27;s eye is bigger than its brain,&quot; for example). Half of the participants were told the information would be erased, while the other half were told it would be saved. Guess what? The latter group made no effort to recall the information when quizzed on it later, because they knew they could find it on their computers. In the same study, a group was asked to remember both the information and the folders it was stored in. They didn&#x27;t remember the information, but they remembered how to find the folders. In other words, human memory is not deteriorating but &quot;adapting to new communications technology,&quot; Sparrow says.</p><p>In a very practical way, the Internet is becoming an external hard drive for our memories, a process known as &quot;cognitive offloading.&quot; Traditionally, this role was fulfilled by data banks, libraries, and other humans. Your father may never remember birthdays because your mother does, for instance. Some worry that this is having a destructive effect on society, but Sparrow sees an upside. Perhaps, she suggests, the trend will change our approach to learning from a focus on individual facts and memorization to an emphasis on more conceptual thinking—something that is not available on the Internet. &quot;I personally have never seen all that much intellectual value in memorizing things,&quot; Sparrow says, adding that we haven&#x27;t lost our ability to do it.</p><p>Still other experts say it&#x27;s too soon to understand how the Internet affects our brains. There is no experimental evidence showing that it interferes with our ability to focus, for instance, wrote psychologists Christopher Chabris and Daniel J. Simons. And surfing the web exercised the brain more than reading did among computer-savvy older adults in a 2008 study involving 24 participants at the Semel Institute for Neuroscience and Human Behavior at the University of California, Los Angeles.</p><p>&quot;There may be costs associated with our increased reliance on the Internet, but I&#x27;d have to imagine that overall the benefits are going to outweigh those costs,&quot; observes psychology professor Benjamin Storm. &quot;It seems pretty clear that memory is changing, but is it changing for the better? At this point, we don&#x27;t know.&quot;</p></div>
+<p><strong>答案：</strong> 31. C　32. D　33. A　34. A　35. B</p>
 <p>1. <strong>C</strong>：首段 <code>changing merely what we remember, not our capacity</code>，变的只是记忆内容（焦点），不是记忆能力。</p>
 <p>2. <strong>D</strong>：第二段互联网成外部硬盘，<code>cognitive offloading</code> 即卸载记忆负担。</p>
 <p>3. <strong>A</strong>：第二段 <code>change our approach to learning from... memorization to... conceptual thinking</code>，互联网会改革学习方式。</p>
@@ -353,43 +334,37 @@ As far as I am concerned, it is a positive trend ______.</code></pre>
 <h3>Day24 阅读精读（20分钟）- 2023年英语二 Text 4 真题</h3>
 <blockquote><p><strong>真题信息</strong>：2023年全国硕士研究生招生考试英语（二），阅读理解 Text 4，主题为“青少年的矛盾性（亲社会与叛逆并存）”。</p>
 <p><strong>做法</strong>：先盖住答案，18分钟读完做5题，再对答案。</p></blockquote>
-<p><strong>原文：</strong></p>
-<p class="en">Teenagers are paradoxical. That&#x27;s a mild and detached way of saying something that parents often express with considerably stronger language. But the paradox is scientific as well as personal. In adolescence, helpless and dependent children who have relied on grown-ups for just about everything become independent people who can take care of themselves and help each other. At the same time, once cheerful and compliant children become rebellious teenage risk-takers.</p>
-<p class="en">A new study published in the journal Child Development, by Eveline Crone of the University of Leiden and colleagues, suggests that the positive and negative sides of teenagers go hand in hand. The study is part of a new wave of thinking about adolescence. For a long time, scientists and policy makers concentrated on the idea that teenagers were a problem that needed to be solved. The new work emphasizes that adolescence is a time of opportunity as well as risk.</p>
-<p class="en">The researchers studied &quot;prosocial&quot; and rebellious traits in more than 200 children and young adults, ranging from 11 to 28 years old. The participants filled out questionnaires about how often they did things that were altruistic and positive, like sacrificing their own interests to help a friend, or rebellious and negative, like getting drunk or staying out late.</p>
-<p class="en">Other studies have shown that rebellious behavior increases as you become a teenager and then fades away as you grow older. But the new study shows that, interestingly, the same pattern holds for prosocial behavior. Teenagers were more likely than younger children or adults to report that they did things like unselfishly helping a friend.</p>
-<p class="en">Most significantly, there was a positive correlation between prosociality and rebelliousness. The teenagers who were more rebellious were also more likely to help others. The good and bad sides of adolescence seem to develop together.</p>
-<p class="en">Is there some common factor that underlies these apparently contradictory developments? One idea is that teenage behavior is related to what researchers call &quot;reward sensitivity.&quot; Decision-making always involves balancing rewards and risks, benefits and costs. &quot;Reward sensitivity&quot; measures how much reward it takes to outweigh risk.</p>
-<p class="en">Teenagers are particularly sensitive to social rewards—winning the game, impressing a new friend, getting that boy to notice you. Reward sensitivity, like prosocial behavior and risk-taking, seems to go up in adolescence and then down again as we age. Somehow, when you hit 30, the chance that something exciting and new will happen at that party just doesn&#x27;t seem to outweigh the effort of getting up off the couch.</p>
-<p><strong>5题：</strong></p>
-<p>36. According to Paragraph 1, children growing into adolescence tend to ______.</p>
-<p>A. develop opposite personality traits</p>
-<p>B. see the world in an unreasonable way</p>
-<p>C. have fond memories of their past</p>
-<p>D. show affection for their parents</p>
-<p>37. It can be learned from Paragraph 2 that Crone&#x27;s study ______.</p>
-<p>A. explores teenagers&#x27; social responsibilities</p>
-<p>B. examines teenagers&#x27; emotional problems</p>
-<p>C. provides a new insight into adolescence</p>
-<p>D. highlights negative adolescent behavior</p>
-<p>38. What does Crone&#x27;s study find about prosocial behavior?</p>
-<p>A. It results from the wish to cooperate.</p>
-<p>B. It is cultivated through education.</p>
-<p>C. It is subject to family influence.</p>
-<p>D. It tends to peak in adolescence.</p>
-<p>39. It can be learned from the last two paragraphs that teenagers ______.</p>
-<p>A. overstress their influence on others</p>
-<p>B. care a lot about social recognition</p>
-<p>C. become anxious about their future</p>
-<p>D. endeavor to live a joyful life</p>
-<p>40. What is the text mainly about?</p>
-<p>A. Why teenagers are self-contradictory.</p>
-<p>B. Why teenagers are risk-sensitive.</p>
-<p>C. How teenagers develop prosociality.</p>
-<p>D. How teenagers become independent.</p>
+<div class="grp" data-grp="day19-25-g46"><span>原文：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
+<div class="grp" data-grp="day19-25-g47"><span>5题：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
+<p><strong>36. According to Paragraph 1, children growing into adolescence tend to ______.</strong></p>
+<button class="opt" data-q="day19-25-q36" data-o="A"><b>A.</b> develop opposite personality traits</button>
+<button class="opt" data-q="day19-25-q36" data-o="B"><b>B.</b> see the world in an unreasonable way</button>
+<button class="opt" data-q="day19-25-q36" data-o="C"><b>C.</b> have fond memories of their past</button>
+<button class="opt" data-q="day19-25-q36" data-o="D"><b>D.</b> show affection for their parents</button>
+<p><strong>37. It can be learned from Paragraph 2 that Crone&#x27;s study ______.</strong></p>
+<button class="opt" data-q="day19-25-q37" data-o="A"><b>A.</b> explores teenagers&#x27; social responsibilities</button>
+<button class="opt" data-q="day19-25-q37" data-o="B"><b>B.</b> examines teenagers&#x27; emotional problems</button>
+<button class="opt" data-q="day19-25-q37" data-o="C"><b>C.</b> provides a new insight into adolescence</button>
+<button class="opt" data-q="day19-25-q37" data-o="D"><b>D.</b> highlights negative adolescent behavior</button>
+<p><strong>38. What does Crone&#x27;s study find about prosocial behavior?</strong></p>
+<button class="opt" data-q="day19-25-q38" data-o="A"><b>A.</b> It results from the wish to cooperate.</button>
+<button class="opt" data-q="day19-25-q38" data-o="B"><b>B.</b> It is cultivated through education.</button>
+<button class="opt" data-q="day19-25-q38" data-o="C"><b>C.</b> It is subject to family influence.</button>
+<button class="opt" data-q="day19-25-q38" data-o="D"><b>D.</b> It tends to peak in adolescence.</button>
+<p><strong>39. It can be learned from the last two paragraphs that teenagers ______.</strong></p>
+<button class="opt" data-q="day19-25-q39" data-o="A"><b>A.</b> overstress their influence on others</button>
+<button class="opt" data-q="day19-25-q39" data-o="B"><b>B.</b> care a lot about social recognition</button>
+<button class="opt" data-q="day19-25-q39" data-o="C"><b>C.</b> become anxious about their future</button>
+<button class="opt" data-q="day19-25-q39" data-o="D"><b>D.</b> endeavor to live a joyful life</button>
+<p><strong>40. What is the text mainly about?</strong></p>
+<button class="opt" data-q="day19-25-q40" data-o="A"><b>A.</b> Why teenagers are self-contradictory.</button>
+<button class="opt" data-q="day19-25-q40" data-o="B"><b>B.</b> Why teenagers are risk-sensitive.</button>
+<button class="opt" data-q="day19-25-q40" data-o="C"><b>C.</b> How teenagers develop prosociality.</button>
+<button class="opt" data-q="day19-25-q40" data-o="D"><b>D.</b> How teenagers become independent.</button>
 <label class="task"><input type="checkbox" data-k="day19-25_133"><span>18分钟做完，写下答案</span></label>
 <label class="task"><input type="checkbox" data-k="day19-25_134"><span>对答案见折叠区</span></label>
-<details><summary>Day24 答案&amp;解析（做完再点开）</summary><p><strong>答案：</strong> 36. A　37. C　38. D　39. B　40. A</p>
+<details><summary>Day24 答案&amp;解析（做完再点开）</summary><div class="en"><p>Teenagers are paradoxical. That&#x27;s a mild and detached way of saying something that parents often express with considerably stronger language. But the paradox is scientific as well as personal. In adolescence, helpless and dependent children who have relied on grown-ups for just about everything become independent people who can take care of themselves and help each other. At the same time, once cheerful and compliant children become rebellious teenage risk-takers.</p><p>A new study published in the journal Child Development, by Eveline Crone of the University of Leiden and colleagues, suggests that the positive and negative sides of teenagers go hand in hand. The study is part of a new wave of thinking about adolescence. For a long time, scientists and policy makers concentrated on the idea that teenagers were a problem that needed to be solved. The new work emphasizes that adolescence is a time of opportunity as well as risk.</p><p>The researchers studied &quot;prosocial&quot; and rebellious traits in more than 200 children and young adults, ranging from 11 to 28 years old. The participants filled out questionnaires about how often they did things that were altruistic and positive, like sacrificing their own interests to help a friend, or rebellious and negative, like getting drunk or staying out late.</p><p>Other studies have shown that rebellious behavior increases as you become a teenager and then fades away as you grow older. But the new study shows that, interestingly, the same pattern holds for prosocial behavior. Teenagers were more likely than younger children or adults to report that they did things like unselfishly helping a friend.</p><p>Most significantly, there was a positive correlation between prosociality and rebelliousness. The teenagers who were more rebellious were also more likely to help others. The good and bad sides of adolescence seem to develop together.</p><p>Is there some common factor that underlies these apparently contradictory developments? One idea is that teenage behavior is related to what researchers call &quot;reward sensitivity.&quot; Decision-making always involves balancing rewards and risks, benefits and costs. &quot;Reward sensitivity&quot; measures how much reward it takes to outweigh risk.</p><p>Teenagers are particularly sensitive to social rewards—winning the game, impressing a new friend, getting that boy to notice you. Reward sensitivity, like prosocial behavior and risk-taking, seems to go up in adolescence and then down again as we age. Somehow, when you hit 30, the chance that something exciting and new will happen at that party just doesn&#x27;t seem to outweigh the effort of getting up off the couch.</p></div>
+<p><strong>答案：</strong> 36. A　37. C　38. D　39. B　40. A</p>
 <p>1. <strong>A</strong>：首段④⑤句 <code>become independent people... At the same time... become rebellious risk-takers</code>，呈现正反两面性。</p>
 <p>2. <strong>C</strong>：第二段 <code>part of a new wave of thinking</code> + 传统“问题”观 vs 新“机遇与风险并存”观，提供新见解。</p>
 <p>3. <strong>D</strong>：第四段 <code>the same pattern holds for prosocial behavior</code>，亲社会行为也在青春期达峰。</p>
@@ -401,13 +376,11 @@ As far as I am concerned, it is a positive trend ______.</code></pre>
 <h3>Day24 翻译（40分钟）- 2023年真题：诗歌的力量</h3>
 <blockquote><p><strong>真题信息</strong>：2023年英语（二）翻译 Q46，约150词，15分。节选自 The Week Junior《诗歌的力量》。</p>
 <p><strong>做法</strong>：先自己翻一遍（25分钟），再对参考译文找差距（15分钟）。注意并列形容词串和定语从句的断句。</p></blockquote>
-<p><strong>英文原文：</strong></p>
-<p class="en">In the late 18th century, William Wordsworth became famous for his poems about nature. And he was one of the founders of a movement called Romanticism, which celebrated the wonders of the natural world.</p>
-<p class="en">Poetry is powerful. Its energy and rhythm can capture a reader, transport them to another world and make them see things differently. Through carefully selected words and phrases, poems can be dramatic, funny, beautiful, moving and inspiring.</p>
-<p class="en">No one knows for sure when poetry began but it has been around for thousands of years, even before people could write. It was a way to tell stories and pass down history. It is closely related to song and even when written it is usually created to be performed out loud. Poems really come to life when they are recited. This can also help with understanding them too, because the rhythm and sounds of the words become clearer.</p>
+<div class="grp" data-grp="day19-25-g48"><span>英文原文：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
 <label class="task"><input type="checkbox" data-k="day19-25_135"><span><strong>翻25分钟</strong>：逐句翻，第二段三个并列谓语（capture / transport / make）别漏；第三段 <code>even before...</code> 让步别翻反</span></label>
 <label class="task"><input type="checkbox" data-k="day19-25_136"><span><strong>对15分钟</strong>：对照折叠区参考译文，用红笔标出漏翻、错翻的关键词</span></label>
-<details><summary>Day24 参考译文（翻完再点开）</summary><p>十八世纪末，威廉·华兹华斯以其关于自然的诗歌而闻名遐迩。而他也是浪漫主义运动的缔造者之一，该运动颂扬自然世界的奇迹。</p>
+<details><summary>Day24 参考译文（翻完再点开）</summary><div class="en"><p>In the late 18th century, William Wordsworth became famous for his poems about nature. And he was one of the founders of a movement called Romanticism, which celebrated the wonders of the natural world.</p><p>Poetry is powerful. Its energy and rhythm can capture a reader, transport them to another world and make them see things differently. Through carefully selected words and phrases, poems can be dramatic, funny, beautiful, moving and inspiring.</p><p>No one knows for sure when poetry began but it has been around for thousands of years, even before people could write. It was a way to tell stories and pass down history. It is closely related to song and even when written it is usually created to be performed out loud. Poems really come to life when they are recited. This can also help with understanding them too, because the rhythm and sounds of the words become clearer.</p></div>
+<p>十八世纪末，威廉·华兹华斯以其关于自然的诗歌而闻名遐迩。而他也是浪漫主义运动的缔造者之一，该运动颂扬自然世界的奇迹。</p>
 <p>诗歌富有感染力。它的能量与韵律可以捕获读者的心，带他们去到另一个世界，让他们以不同的视角来看待事物。凭借精心挑选的字词和短语，诗歌或夸张戏剧，或诙谐幽默，或优美迷人，或动人心魄，或振奋人心。</p>
 <p>没有人确切地知道诗歌于何时兴起，但是它已经存在了数千年，甚至在人们会书写之前就已存在。它是一种讲述故事和传承历史的方式。它与音乐密切相关，即使被书写出来，也通常是为了大声朗诵而创作。诗歌在被吟诵时才真正鲜活起来。吟诵也有助于理解诗歌，因为字词的韵律和发音会更加清晰明确。</p>
 <p><strong>得分关键词</strong>：<code>founder</code> 缔造者 / <code>celebrate</code> 颂扬 / <code>capture</code> 捕获 / <code>transport</code> 带去 / <code>dramatic</code> 戏剧性的 / <code>pass down</code> 传承 / <code>come to life</code> 鲜活起来 / <code>recite</code> 吟诵</p>
@@ -433,12 +406,12 @@ As far as I am concerned, it is a positive trend ______.</code></pre>
 <label class="task"><input type="checkbox" data-k="day19-25_142"><span>对比 Day05—Day25 四周错题：哪类题错得最多，下周重点练哪类</span></label>
 <label class="task"><input type="checkbox" data-k="day19-25_143"><span>把最常错的10个词整理到错词本</span></label>
 <label class="task"><input type="checkbox" data-k="day19-25_144"><span>每篇抄1个定位句，标出题干关键词是如何在原文同义替换的</span></label>
-<details><summary>Day25 复盘检查（做完再点开）</summary><p><strong>大作文检查：</strong></p>
+<details><summary>Day25 复盘检查（做完再点开）</summary><div class="grp" data-grp="day19-25-g49"><span>大作文检查：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
 <p>1. 模板骨架0错，三套数据数字不错、顺序不错。</p>
 <p>2. 折线图拐点句 <code>marked a watershed</code> 0错。</p>
-<p><strong>翻译检查：</strong></p>
+<div class="grp" data-grp="day19-25-g50"><span>翻译检查：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
 <ul><li>四篇关键词无漏翻，定语从句先断句再连词。</li><li>每篇最难的1个句子能独立重翻。</li></ul>
-<p><strong>阅读检查：</strong></p>
+<div class="grp" data-grp="day19-25-g51"><span>阅读检查：</span><button class="fold" onclick="toggleGrp(this)">收起</button></div>
 <ul><li>2022—2023均使用英语（二）真题；不要用普通英语阅读或自编文章替代。</li><li>每篇只需完成：限时做题 → 对答案 → 记录定位句 → 整理核心词。</li></ul></details>
 <h3>本周完成标准</h3>
 <label class="task"><input type="checkbox" data-k="day19-25_145"><span>大作文模板+三套数据能默</span></label>
@@ -471,6 +444,38 @@ window.addEventListener('scroll',function(){
 });
 function goTop(){window.scrollTo({top:0,behavior:'smooth'});}
 function goBot(){window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});}
+function toggleGrp(btn){
+  var g=btn.closest('.grp');
+  var hide=g.classList.toggle('off');
+  btn.textContent=hide?'展开':'收起';
+  var el=g.nextElementSibling;
+  while(el&&!el.classList.contains('grp')&&el.tagName!=='H2'&&el.tagName!=='HR'){
+    el.style.display=hide?'none':'';
+    el=el.nextElementSibling;
+  }
+}
+document.querySelectorAll('button.opt').forEach(function(b){
+  b.addEventListener('click',function(){
+    var q=b.getAttribute('data-q');
+    var parts=q.split('-q');
+    var qnum=parts[1];
+    var ans=b.getAttribute('data-ans')||'';
+    if(!ans){
+      var re=new RegExp('(?:^|\s)'+qnum+'\.\s*([ABCD])');
+      var details=document.querySelectorAll('details');
+      for(var i=0;i<details.length;i++){
+        var t=details[i].textContent||'';
+        var mm=t.match(re);
+        if(mm){ans=mm[1];break;}
+      }
+    }
+    document.querySelectorAll('button.opt[data-q="'+q+'"]').forEach(function(o){o.classList.remove('right','wrong');});
+    if(ans&&b.getAttribute('data-o')===ans){b.classList.add('right');}
+    else if(ans){b.classList.add('wrong');}
+    else{b.classList.add('right');}
+    try{localStorage.setItem('kx_'+q+'_'+b.getAttribute('data-o'),'1');}catch(e){}
+  });
+});
 (function(){
   var boxes=document.querySelectorAll('input[type=checkbox][data-k]');
   var sub=document.getElementById('heroSub');
