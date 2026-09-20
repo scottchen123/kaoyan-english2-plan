@@ -33,6 +33,11 @@ pre code{background:none;color:inherit}.right{text-align:right;color:#6b7280}
 .pager{display:flex;gap:10px;margin-top:24px}
 .pager a{flex:1;text-align:center;background:#fff;border-radius:10px;padding:12px;text-decoration:none;color:#1e40af;font-weight:bold;box-shadow:0 1px 3px rgba(0,0,0,.08)}
 .pager a.empty{visibility:hidden}
+.toc{background:#fff;border-radius:10px;padding:12px 14px;margin:10px 0;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.toc .t{font-weight:bold;margin-bottom:6px;color:#1e40af}
+.toc a{display:inline-block;margin:3px 6px 3px 0;padding:4px 12px;background:#eff6ff;border-radius:16px;text-decoration:none;color:#1e40af;font-size:.88em}
+details.enwrap{background:#fff;border-color:#e5e7eb}
+details.enwrap summary{color:#374151;font-weight:normal}
 .fab{position:fixed;right:14px;width:44px;height:44px;border-radius:50%;border:none;background:#1e40af;color:#fff;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25);display:none;z-index:99}
 #fabTop{bottom:70px}#fabBot{bottom:16px}
 .donebtn{display:block;width:100%;border:none;background:linear-gradient(135deg,#16a34a,#22c55e);color:#fff;font-size:1.05em;font-weight:bold;border-radius:12px;padding:14px;margin-top:20px;cursor:pointer;box-shadow:0 2px 6px rgba(22,163,74,.35)}
@@ -68,9 +73,21 @@ window.addEventListener('scroll',function(){
 });
 function goTop(){window.scrollTo({top:0,behavior:'smooth'});}
 function goBot(){window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});}
+(function(){
+  var boxes=document.querySelectorAll('input[type=checkbox][data-k]');
+  var sub=document.getElementById('heroSub');
+  function count(){
+    var n=0;boxes.forEach(function(b){if(b.checked)n++;});
+    if(sub&&boxes.length){sub.textContent=sub.getAttribute('data-base')+' · 本页 '+n+'/'+boxes.length;}
+  }
+  if(sub){sub.setAttribute('data-base',sub.textContent);}
+  boxes.forEach(function(b){b.addEventListener('change',count);});
+  count();
+})();
 """
 
 _counter = [0]
+TOC = [[]]
 
 
 def esc(t):
@@ -145,11 +162,17 @@ def convert(md_text, page):
             out.append('<p class="right">' + "<br>".join(inline(x) for x in t.split("\n")) + "</p>")
             i += 1
             continue
-        # 标题（内容里h1全部降为h2，页面标题已是h1）
+        # 标题（内容里h1全部降为h2，页面标题已是h1；h2收进目录）
         m = re.match(r"(#{1,3})\s+(.*)", ln)
         if m:
             lv = min(len(m.group(1)) + 1, 3)
-            out.append(f"<h{lv}>" + inline(m.group(2)) + f"</h{lv}>")
+            text = m.group(2).strip()
+            if lv == 2:
+                aid = f"{page}-s{len(TOC[0])}"
+                TOC[0].append((aid, text))
+                out.append(f'<h2 id="{aid}">' + inline(text) + "</h2>")
+            else:
+                out.append(f"<h{lv}>" + inline(text) + f"</h{lv}>")
             i += 1
             continue
         # 表格
@@ -199,12 +222,16 @@ def convert(md_text, page):
         if not ln.strip():
             i += 1
             continue
-        # 普通段落（纯英文长段加en卡片样式）
+        # 普通段落（纯英文长段包进折叠en卡片，默认收起）
         text = ln.strip()
         if len(text) > 120 and re.search(r"[A-Za-z]{3,}", text) and not re.search(
             r"[一-鿿]", text
         ):
-            out.append('<p class="en">' + inline(text) + "</p>")
+            out.append(
+                '<details class="enwrap"><summary>展开英文原文</summary><p class="en">'
+                + inline(text)
+                + "</p></details>"
+            )
         else:
             out.append("<p>" + inline(text) + "</p>")
         i += 1
@@ -219,10 +246,25 @@ DONEKEY = {
 }
 
 
+SUBS = {
+    "day01-11": "小作文上旬 · 建议到备忘录 + 2019–2021 阅读",
+    "day12-18": "小作文下旬 + 图表入门 + 翻译",
+    "day19-25": "2022–2023 阅读 + 大作文 + 翻译",
+    "day26-32": "2024–2025 阅读 + 大作文 + 翻译",
+    "day33-39": "模考 + 总复盘",
+    "day40": "补课 · 两篇阅读",
+    "sucai": "15 种范文 + 万能模板 + 理由库",
+}
+
+
 def page(title, body, back=True, name=""):
     nav = '<a class="navtop" href="index.html">← 返回计划</a>' if back else ""
     pager = ""
     done = ""
+    toc = ""
+    if TOC[0]:
+        links = "".join(f'<a href="#{a}">{esc(t[:14])}</a>' for a, t in TOC[0])
+        toc = f'<div class="toc"><div class="t">本页目录</div>{links}</div>'
     if name in ORDER:
         k = ORDER.index(name)
         prev = (
@@ -239,9 +281,10 @@ def page(title, body, back=True, name=""):
     return f"""<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><style>{CSS}</style></head><body>
-<div class="hero"><h1>{esc(title)}</h1><div class="sub">考研英语二背诵计划 · 进度自动保存在本机</div></div>
+<div class="hero"><h1>{esc(title)}</h1><div class="sub" id="heroSub">{esc(SUBS.get(name, "考研英语二背诵计划 · 进度自动保存在本机"))}</div></div>
 <div class="wrap">
 {nav}
+{toc}
 {body}{done}{pager}<button class="fab" id="fabTop" onclick="goTop()">↑</button><button class="fab" id="fabBot" onclick="goBot()">↓</button><script>{JS}</script></div></body></html>"""
 
 
@@ -297,6 +340,7 @@ def main():
         if only and src not in only:
             continue
         md = (SRC / src).read_text(encoding="utf-8")
+        TOC[0] = []
         body = convert(md, names[src])
         (DST / (names[src] + ".html")).write_text(page(title, body, name=names[src]), encoding="utf-8")
         print("wrote", names[src] + ".html", len(body), "chars")
