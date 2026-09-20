@@ -5,7 +5,6 @@
 ## Day26 阅读精读（20分钟）- 2024年英语二 Text 1 真题
 
 > **真题信息**：2024年全国硕士研究生招生考试英语（二），阅读理解 Text 1，主题为“数字经济需要更公平地分享收益”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2024-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -75,7 +74,6 @@ A more immediate response is to broaden our digital imaginations to conceive of 
 ## Day26 翻译（40分钟）- 2019年真题：海里厄特的文学造诣
 
 > **真题信息**：2019年英语（二）翻译 Q46，约150词，15分。节选自《真正的詹姆斯·海里厄特》。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2019-2，Q46）。
 > **做法**：先自己翻一遍（25分钟），再对参考译文找差距（15分钟）。长句多，先划主干再补修饰。
 
 **英文原文：**
@@ -101,7 +99,6 @@ It is easy to underestimate English writer James Herriot. He had such a pleasant
 ## Day27 阅读精读（20分钟）- 2024年英语二 Text 2 真题
 
 > **真题信息**：2024年全国硕士研究生招生考试英语（二），阅读理解 Text 2，主题为“英国木材危机”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2024-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -165,7 +162,6 @@ While productive tree planting can deliver real financial benefits to rural econ
 ## Day27 大作文（20分钟）- 2024年真题：劳动实践课收获调查
 
 > **真题信息**：2024年英语（二）大作文 Q48：柱状图，某高校劳动实践课学生主要收获——学知识91.3%、练技能84.8%、幸福感54.4%、团队合作32.6%。150词左右，15分。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2024-2，Q48）。
 > **做法**：同一套模板，第四遍填新数据——这次四个数据，练“第一/第二/相当比例/少数”四档描述。
 
 **必背范文（约170词）：**
@@ -190,7 +186,6 @@ Considering all these contributors, we should bear in mind that great importance
 ## Day28 阅读精读（20分钟）- 2024年英语二 Text 3 真题
 
 > **真题信息**：2024年全国硕士研究生招生考试英语（二），阅读理解 Text 3，主题为“高龄驾驶安全”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2024-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -256,7 +251,6 @@ As long as there are other cars on the roads, self-driving cars won't solve the 
 ## Day28 小作文（20分钟）- 2024年真题：古镇老宅调查计划邮件
 
 > **真题信息**：2024年英语（二）小作文 Q47：和Jack一起做古镇老宅保护调查，写邮件提出计划并征求意见。100词左右，10分。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2024-2，Q47）。
 > **做法**：这是咨询+计划类邮件，用“背景—计划三点—征求意见”骨架，第一遍允许看范文。
 
 **必背范文（约150词）：**
@@ -285,7 +279,6 @@ Dear Jack,
 ## Day29 阅读精读（20分钟）- 2024年英语二 Text 4 真题
 
 > **真题信息**：2024年全国硕士研究生招生考试英语（二），阅读理解 Text 4，主题为“健康App与隐私保护”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2024-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -349,7 +342,6 @@ As to the prospects for federal legislation, commentators suggest that comprehen
 ## Day29 翻译（40分钟）- 2024年真题：农贸市场
 
 > **真题信息**：2024年英语（二）翻译 Q46，约150词，15分。主题农贸市场。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2024-2，Q46）。
 > **做法**：先自己翻一遍（25分钟），再对参考译文找差距（15分钟）。注意伴随状语和 `pick up / cut out` 僻义。
 
 **英文原文：**
@@ -379,7 +371,6 @@ Farmers' markets are usually weekly or monthly events, most often with outdoor s
 ## Day30 阅读精读（20分钟）- 2025年英语二 Text 1 真题
 
 > **真题信息**：2025年全国硕士研究生招生考试英语（二），阅读理解 Text 1，主题为“美国小费文化（tipflation）”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2025-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -447,7 +438,6 @@ So to increase employee wages without raising prices, more employers are succumb
 ## Day30 大作文（20分钟）- 2025年真题：老年人休闲活动
 
 > **真题信息**：2025年英语（二）大作文 Q48：柱状图，某社区老年人主要休闲活动——看电视90.8%、散步68.3%、养花34.7%、阅读31.8%、下棋18.4%。150词左右，15分。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2025-2，Q48）。
 > **做法**：同一套模板，第五遍填新数据——五个数据，练“第一/第二/其余三项并列”描述。
 
 **必背范文（约170词）：**
@@ -472,7 +462,6 @@ Considering all these contributors, we should bear in mind that great importance
 ## Day31 阅读精读（20分钟）- 2025年英语二 Text 2 真题
 
 > **真题信息**：2025年全国硕士研究生招生考试英语（二），阅读理解 Text 2，主题为“英国NHS医疗危机”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2025-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -538,7 +527,6 @@ Reform wants to ask how power and resources should be distributed in our health 
 ## Day31 翻译（40分钟）- 2025年真题：谈话中的停顿
 
 > **真题信息**：2025年英语（二）翻译 Q46，约150词，15分。主题谈话停顿与亲密感。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2025-2，Q46）。
 > **做法**：先自己翻一遍（25分钟），再对参考译文找差距（15分钟）。注意长短停顿的对比逻辑别翻反。
 
 **英文原文：**
@@ -572,7 +560,6 @@ But the opposite seems to be true for conversations between friends. Long gaps t
 ## Day31 小作文（20分钟）- 2025年真题：短剧邀请邮件
 
 > **真题信息**：2025年英语（二）小作文 Q47：策划经典中国小说改编短剧，写邮件给John介绍并邀请参演。100词左右，10分。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2025-2，Q47）。
 > **做法**：邀请信真题变体，用邀请信骨架填“三国演义+12月30日开拍+演技好”三要素。
 
 **必背范文（约150词）：**

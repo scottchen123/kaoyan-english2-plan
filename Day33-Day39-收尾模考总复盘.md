@@ -5,7 +5,6 @@
 ## Day33 阅读精读（20分钟）- 2025年英语二 Text 3 真题
 
 > **真题信息**：2025年全国硕士研究生招生考试英语（二），阅读理解 Text 3，主题为“印度高温行动预案（HAPs）”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2025-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -83,7 +82,6 @@ HAPs shouldn't just include short-term emergency responses, researchers say, but
 ## Day34 阅读精读（20分钟）- 2025年英语二 Text 4 真题
 
 > **真题信息**：2025年全国硕士研究生招生考试英语（二），阅读理解 Text 4，主题为“心选小路（desire paths）”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2025-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。2019–2025共28篇阅读至此全部做完。
 
 **原文：**

@@ -31,7 +31,6 @@ Dear David,
 ## Day5 阅读精读（20分钟）- 2019年英语二 Text 3 真题
 
 > **真题信息**：2019年全国硕士研究生招生考试英语（二），阅读理解 Text 3，主题为“美国农业劳动力短缺与移民签证”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2019-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -131,7 +130,6 @@ Dear Sir or Madam,
 ## Day6 阅读精读（20分钟）- 2019年英语二 Text 4 真题
 
 > **真题信息**：2019年全国硕士研究生招生考试英语（二），阅读理解 Text 4，主题为“塑料危机：个人行动 vs 政府结构性变革”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2019-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -231,7 +229,6 @@ Dear Jack,
 ## Day7 阅读精读（20分钟）- 2020年英语二 Text 2 真题
 
 > **真题信息**：2020年全国硕士研究生招生考试英语（二），阅读理解 Text 2，主题为“CEO 高薪的合理性”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2020-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -325,7 +322,6 @@ Furthermore, the highest CEO salaries are paid to outside candidates, not to the
 ## Day8 阅读精读（20分钟）- 2020年英语二 Text 3 真题
 
 > **真题信息**：2020年全国硕士研究生招生考试英语（二），阅读理解 Text 3，主题为“城市治污：马德里清洁空气区与伦敦超低排放区”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2020-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -423,7 +419,6 @@ Dear Sir or Madam,
 ## Day9 阅读精读（20分钟）- 2020年英语二 Text 4 真题
 
 > **真题信息**：2020年全国硕士研究生招生考试英语（二），阅读理解 Text 4，主题为“Z世代的务实与谨慎”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2020-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -518,7 +513,6 @@ SUBJECT: Volunteer activities in Xihua Community
 ## Day10 阅读精读（20分钟）- 2021年英语二 Text 2 真题
 
 > **真题信息**：2021年全国硕士研究生招生考试英语（二），阅读理解 Text 2，主题为“英国粮食自给是否可行”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2021-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**

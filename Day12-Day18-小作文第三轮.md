@@ -31,7 +31,6 @@ Dear Fellow Students,
 ## Day12 阅读精读（20分钟）- 2021年英语二 Text 3 真题
 
 > **真题信息**：2021年全国硕士研究生招生考试英语（二），阅读理解 Text 3，主题为“科技巨头收购初创公司”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2021-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -129,7 +128,6 @@ Dear Editors,
 ## Day13 阅读精读（20分钟）- 2021年英语二 Text 4 真题
 
 > **真题信息**：2021年全国硕士研究生招生考试英语（二），阅读理解 Text 4，主题为“第一印象与直觉判断”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2021-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -223,7 +221,6 @@ Dear Mr. President,
 ## Day14 阅读精读（20分钟）- 2022年英语二 Text 1 真题
 
 > **真题信息**：2022年全国硕士研究生招生考试英语（二），阅读理解 Text 1，主题为“气候友好型鸡蛋”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2022-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -289,7 +286,6 @@ The industry is betting that the same consumers paying more for premium attribut
 ## Day14 大作文（20分钟）- 2022年真题：快递业务量柱状图
 
 > **真题信息**：2022年英语（二）大作文，柱状图：2018—2020年中国快递业务量，全国总量51亿→83亿件，农村地区翻番至300亿件。150词左右，15分。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2022-2，Q48）。
 > **做法**：用已背的大作文模板往里填数据，第一遍允许看模板，第二遍盖住默。
 
 **必背范文（约170词）：**
@@ -340,7 +336,6 @@ Dear Mr. Smith,
 ## Day15 阅读精读（20分钟）- 2022年英语二 Text 2 真题
 
 > **真题信息**：2022年全国硕士研究生招生考试英语（二），阅读理解 Text 2，主题为“退休后继续工作（unretirement）”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2022-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -414,7 +409,6 @@ Unfortunately, many people who are opting to work in retirement are preparing to
 ## Day16 小作文（20分钟）- 2022年真题：校园美食节邮件
 
 > **真题信息**：2022年英语（二）小作文 Q47：为留学生组织校园美食节，写邮件介绍活动并邀请参加。100词左右，10分。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2022-2，Q47）。
 > **做法**：这是邀请信的真题变体，用已背的邀请信模板往里填时间地点和活动内容。
 
 **必背范文（约130词）：**
@@ -439,7 +433,6 @@ Dear International Students,
 ## Day16 大作文（20分钟）- 2021年真题：居民锻炼方式
 
 > **真题信息**：2021年英语（二）大作文 Q48：柱状图，居民锻炼方式——独自锻炼超半数、和朋友47.7%、和家人23.9%、团队运动不超16%。150词左右，15分。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2021-2，Q48）。
 > **做法**：同一套模板，第二遍填新数据，重点练“数据句换数字不换骨架”。
 
 **必背范文（约170词）：**
@@ -464,7 +457,6 @@ Considering all these contributors, we should bear in mind that great importance
 ## Day17 翻译（40分钟）- 2021年真题：与陌生人交谈
 
 > **真题信息**：2021年英语（二）翻译 Q46，约150词，15分。节选自 Psychology Today《为何要与陌生人交谈》。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2021-2，Q46）。
 > **做法**：先自己翻一遍（25分钟），再对参考译文找差距（15分钟）。翻译按点给分，结构对+关键词对就能拿分。
 
 **英文原文：**

@@ -5,7 +5,6 @@
 ## Day19 阅读精读（20分钟）- 2022年英语二 Text 3 真题
 
 > **真题信息**：2022年全国硕士研究生招生考试英语（二），阅读理解 Text 3，主题为“黑暗模式（dark patterns）与数字欺骗”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2022-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -71,7 +70,6 @@ As more states consider promulgating additional regulations, there is a need for
 ## Day19 翻译（40分钟）- 2022年真题：绘画的意外收获
 
 > **真题信息**：2022年英语（二）翻译 Q46，约145词，15分。节选自 Flavours Holidays《绘画对心理健康的七大益处》。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2022-2，Q46）。
 > **做法**：先自己翻一遍（25分钟），再对参考译文找差距（15分钟）。注意让步状语从句和固定搭配。
 
 **英文原文：**
@@ -105,7 +103,6 @@ In fact, creative problem-solving skills are incredibly useful in daily life, wi
 ## Day20 阅读精读（20分钟）- 2022年英语二 Text 4 真题
 
 > **真题信息**：2022年全国硕士研究生招生考试英语（二），阅读理解 Text 4，主题为“道德课能否改变行为（吃肉实验）”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2022-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -190,7 +187,6 @@ Only in this way would ______.
 ## Day21 阅读精读（20分钟）- 2023年英语二 Text 1 真题
 
 > **真题信息**：2023年全国硕士研究生招生考试英语（二），阅读理解 Text 1，主题为“塑料草坪之争”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2023-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -256,7 +252,6 @@ It added: "We prefer to help people and organisations make the right choice rath
 ## Day21 大作文（20分钟）- 2023年真题：健康素养折线图
 
 > **真题信息**：2023年英语（二）大作文 Q48：折线图，2012—2021年中国居民健康素养水平从8.80%持续上升到25.40%，2016年增速明显加快。150词左右，15分。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2023-2，Q48）。
 > **做法**：同一套模板，第三遍填新数据——这次是折线图，练“持续上升+拐点”句式。
 
 **必背范文（约170词）：**
@@ -281,7 +276,6 @@ Considering all these contributors, we should bear in mind that great importance
 ## Day22 阅读精读（20分钟）- 2023年英语二 Text 2 真题
 
 > **真题信息**：2023年全国硕士研究生招生考试英语（二），阅读理解 Text 2，主题为“美国国家公园资金危机与私有化之争”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2023-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -349,7 +343,6 @@ The parks do all this on a shoestring. Congress allocates only $3 billion a year
 ## Day22 翻译（40分钟）- 2020年真题：失败的意义
 
 > **真题信息**：2020年英语（二）翻译 Q46，约150词，15分。节选自 MindTools《克服对失败的恐惧》。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2020-2，Q46）。
 > **做法**：先自己翻一遍（25分钟），再对参考译文找差距（15分钟）。句子短、搭配多，注意 `be up to / keep from / stop` 的翻法。
 
 **英文原文：**
@@ -383,7 +376,6 @@ Failure can also teach us things about ourselves that we would never have learne
 ## Day23 阅读精读（20分钟）- 2023年英语二 Text 3 真题
 
 > **真题信息**：2023年全国硕士研究生招生考试英语（二），阅读理解 Text 3，主题为“互联网与人类记忆（认知卸载）”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2023-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -466,7 +458,6 @@ As far as I am concerned, it is a positive trend ______.
 ## Day24 阅读精读（20分钟）- 2023年英语二 Text 4 真题
 
 > **真题信息**：2023年全国硕士研究生招生考试英语（二），阅读理解 Text 4，主题为“青少年的矛盾性（亲社会与叛逆并存）”。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2023-2）。
 > **做法**：先盖住答案，18分钟读完做5题，再对答案。
 
 **原文：**
@@ -534,7 +525,6 @@ Teenagers are particularly sensitive to social rewards—winning the game, impre
 ## Day24 翻译（40分钟）- 2023年真题：诗歌的力量
 
 > **真题信息**：2023年英语（二）翻译 Q46，约150词，15分。节选自 The Week Junior《诗歌的力量》。
-> **来源**：GitHub 结构化真题数据集 `LIziak112/structured-kaoyan-english`（data/2023-2，Q46）。
 > **做法**：先自己翻一遍（25分钟），再对参考译文找差距（15分钟）。注意并列形容词串和定语从句的断句。
 
 **英文原文：**
